@@ -1,4 +1,11 @@
 {
     "name":"Pesino Pharmaceuticals",
-    "length":17
+    "length":17,
+    "Banner_Left_First":"Choose",
+    "Banner_Left_Second":"a Better You",
+    "Banner_Salutation":"Quality our way of Life.....",
+    "Banner_Salutation2":"Serving Humankind through quality Medicines",
+    "BBanner":"Serving quality medicines Since 1992",
+
+    "pTitle":"PRODUCTS"
 }

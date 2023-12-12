@@ -4,6 +4,7 @@ import whiteOval from "../../public/whiteOval.svg";
 import medsClub from "../../public/meds_club.svg";
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Essentials from "../../essentials.json";
 
 function LandingBanner() {
   return (
@@ -12,9 +13,9 @@ function LandingBanner() {
         <div className="grid grid-cols-6 gap-32">
           <div className="col-span-2">
             <div className="text-7xl font-thin leading-normal my-2">
-              <h1 className="mb-0">Choose</h1>
+              <h1 className="mb-0">{Essentials.Banner_Left_First}</h1>
               <div className="">
-                <h1 className="mb-0"> a Better You</h1>
+                <h1 className="mb-0"> {Essentials.Banner_Left_Second}</h1>
                 <div className="flex w-full ">
                   <Image
                     src={UnderLine}
@@ -27,8 +28,8 @@ function LandingBanner() {
               </div>
             </div>
             <div className="font-thin text-2xl leading-normal max-w-sm my-2">
-              <p>Quality our way of Life..... </p>
-              <p>Serving Humankind through quality Medicines </p>
+              <p>{Essentials.Banner_Salutation}</p>
+              <p>{Essentials.Banner_Salutation2}</p>
             </div>
             <button className="button rounded-3xl bg-themeColor flex flex-row justify-center items-center my-4">
               <h2 className="text-white text-2xl p-3">Learn More</h2>
