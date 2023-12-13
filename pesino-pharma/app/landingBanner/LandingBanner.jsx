@@ -1,7 +1,7 @@
 import React from "react";
-import UnderLine from "../../public/BannerUnderLiner.svg";
-import whiteOval from "../../public/whiteOval.svg";
-import medsClub from "../../public/meds_club.svg";
+import UnderLine from "../../public/homepage/BannerUnderLiner.svg";
+import whiteOval from "../../public/homepage/whiteOval.svg";
+import medsClub from "../../public/homepage/meds_club.svg";
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Essentials from "../../essentials.json";

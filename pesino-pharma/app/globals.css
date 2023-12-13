@@ -15,8 +15,24 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 .class {
   font-family: var(--font-poppins);
+}
+.cardProps{
+  width: 465px;
+  height: 627px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+background: #D2EDE8;
 }
 .h-30rem{
   height: 30rem;
@@ -33,4 +49,5 @@
 
 body {
   color: rgb(0,0,0);
+  
 }

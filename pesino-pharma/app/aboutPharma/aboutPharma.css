@@ -1,0 +1,14 @@
+.P-rect{
+    width: 333px;
+height: 624px;
+flex-shrink: 0;
+border-radius: 100px 20px;
+background:  lightgray 50% / cover no-repeat, #FFF
+}
+.p-curve{
+    width: 363px;
+height: 312px;
+flex-shrink: 0;
+border-radius: 20px 200px 200px 20px;
+background: lightgray 50% / cover no-repeat, #FFF;
+}
