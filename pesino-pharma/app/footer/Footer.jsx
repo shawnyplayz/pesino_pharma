@@ -10,7 +10,7 @@ function Footer() {
   const [email, setEmail] = useState(null);
   return (
     <div className="flex px-28 py-8 w-full mt-20">
-      <div class="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+      <div class="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16">
         <div classname="p-4">
           <div className="flex flex-row mt-8">
             <div className="flex flex-col gap-3">
@@ -22,10 +22,15 @@ function Footer() {
                   loading="eager"
                   priority={true}
                 />
-                <div className="companyName">
-                  <span className="self-center text-2xl font-medium whitespace-nowrap themeColor">
-                    {Essentials.footer_cName}
+                <div className="companyName flex flex-col ">
+                  <span className="self-center text-4xl font-medium whitespace-nowrap themeColor">
+                    {Essentials.name}
                   </span>
+                  <div className="flex w-full justify-start">
+                    <span className="self-center text-3xl font-medium whitespace-nowrap themeColor">
+                      Pvt. Ltd
+                    </span>
+                  </div>
                 </div>
               </div>
               <div className="ml-4 flex flex-col font-normal text-xl gap-2 max-w-sm">
@@ -40,7 +45,7 @@ function Footer() {
         </div>
         <div classname="p-4">
           <div className="flex flex-row mt-8 mb-16">
-            <span className="self-center text-3xl font-medium whitespace-nowrap text-black">
+            <span className="self-center text-4xl font-medium whitespace-nowrap text-black">
               Our Company
             </span>{" "}
           </div>
@@ -54,7 +59,7 @@ function Footer() {
         <div className="">
           <div className="flex flex-col h-full p-4">
             <div className="flex flex-row mt-4 mb-10">
-              <span className="self-center text-3xl font-medium whitespace-nowrap text-black">
+              <span className="self-center text-4xl font-medium whitespace-nowrap text-black">
                 Subscribe
               </span>
             </div>
