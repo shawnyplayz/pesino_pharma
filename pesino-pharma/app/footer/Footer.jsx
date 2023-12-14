@@ -72,6 +72,7 @@ function Footer() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your e-mail"
                 />
                 <FaArrowCircleRight className="absolute left-80 top-2 text-white text-5xl bg-home-start rounded-full border-none hover:cursor-pointer" />
               </div>

@@ -1,5 +1,8 @@
+import InnovativeCursorLoader from "@/app/loader/InnovativeCursorLoader";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -16,7 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Suspense fallback={<Loading />}>{children}</Suspense>
+      </body>
     </html>
   );
 }
