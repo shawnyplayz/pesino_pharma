@@ -8,7 +8,7 @@ import Essentials from "../../essentials.json";
 function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-white border-gray-200  text-xl text-black">
+    <nav className="bg-white border-gray-200  text-xl text-black relative z-10">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center">
           <Image

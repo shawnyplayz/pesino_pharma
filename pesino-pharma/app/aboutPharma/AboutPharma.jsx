@@ -20,7 +20,7 @@ const Benefits = [
   {
     icon: <GiMedicines />,
     title: "QUALITY",
-    desc: "The Quality Operations team at Pesino Pharm ensures to provide drugs of consistent quality, purity and efficacy to our consumers. In order to achieve this, in-house cGMP Quality Circles ensure that all activities in the manufacturing units are carried out in accordance with cGMP norms. In process controls, usage of efficient & validated machinery, validated manufacturing processes, validated cleaning procedures, strict environmental & microbiological controls in production and packaging areas, training of personnel, maintaining hygiene and cleanliness, proper record keeping, and so on are some of the controls exercised by this section so as to ensure that Quality is built into the final product.",
+    desc: "Pesino Pharma's Quality Operations team upholds rigorous standards to deliver consistently high-quality, pure, and effective drugs to consumers. Our in-house cGMP Quality Circles enforce adherence to cGMP norms across manufacturing units. Key controls include validated machinery and processes, stringent environmental and microbiological oversight, personnel training, and meticulous record-keeping. These measures ensure that quality is integral to the final product.",
   },
   {
     icon: <GiFactory />,
@@ -46,7 +46,7 @@ const Benefits = [
 function AboutPharma() {
   return (
     <div className="bg-home-start w-full h-auto">
-      <div className="flex flex-row gap-44 justify-center my-8">
+      <div className="flex flex-row gap-44 justify-center mt-8">
         {/* left side P */}
         <div className="flex flex-row gap-5 my-24 w-1/2 justify-center">
           <div className="p-stand">
@@ -97,7 +97,16 @@ function AboutPharma() {
             {Benefits.map((el) => (
               <div class="p-4">
                 <div className="">
-                  <Image src={Pleaf} className="" alt="logo" loading="lazy" />
+                  <div className=" flex justify-start items-center bg-react-leaf bg-no-repeat bg-10% h-36 w-auto">
+                    <div className="flex justify-start text-white  text-4xl ml-16 w-full">
+                      {el.icon}
+                    </div>
+                    {/* <Image src={Pleaf} className="" alt="logo" loading="lazy" /> */}
+                    {/* <div className="absolute -mt-14 ml-20 text-white text-3xl">
+                      {el?.icon}
+                    </div> */}
+                  </div>
+
                   <div className="title my-8 text-3xl font-normal">
                     {el?.title}
                   </div>
@@ -107,36 +116,6 @@ function AboutPharma() {
                 </div>
               </div>
             ))}
-            {/* <!-- Row 1 --> */}
-            {/* <div class="p-4">
-              <div className="">
-                <Image src={Pleaf} className="" alt="logo" loading="lazy" />
-                <div className="title my-8 text-3xl font-normal">
-                  Lorem, ipsum.
-                </div>
-                <div className="text-xl w-56 font-normal">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem, sed.
-                </div>
-              </div>
-            </div>
-            <div class="p-4">
-              <Image src={Pleaf} className="" alt="logo" loading="lazy" />
-            </div>
-            <div class="p-4">
-              <Image src={Pleaf} className="" alt="logo" loading="lazy" />
-            </div> */}
-
-            {/* <!-- Row 2 --> */}
-            {/* <div class="p-4">
-              <Image src={Pleaf} className="" alt="logo" loading="lazy" />
-            </div>
-            <div class="p-4">
-              <Image src={Pleaf} className="" alt="logo" loading="lazy" />
-            </div>
-            <div class="p-4">
-              <Image src={Pleaf} className="" alt="logo" loading="lazy" />
-            </div> */}
           </div>
         </div>
       </div>
