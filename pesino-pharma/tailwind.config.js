@@ -12,9 +12,13 @@ module.exports = {
         cover: "cover",
         contain: "contain",
         "10%": "10rem 10rem",
+        "100-100%": "100% 100%",
       },
       maxHeight: {
         "maxh-h-30rem": "30rem",
+      },
+      height: {
+        "40rem": "40rem",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -22,6 +26,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "white-oval": "url('../public/homepage/whiteOval.svg')",
         "react-leaf": "url('../public/homepage/react-leaf.svg')",
+        "about-us": "url('../public/aboutus/aboutBanner.jpeg')",
       },
       fontFamily: {
         sans: ["var(--font-inter)"],

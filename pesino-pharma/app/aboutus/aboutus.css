@@ -1,0 +1,12 @@
+.bottomBanner{
+height: 240px;
+flex-shrink: 0;
+    border-radius: 100px 100px 0px 0px;
+background: #FFF;
+}
+.banner-gradient{
+    
+    background-size: 100% 100%;
+    background-image: linear-gradient(0deg, #000 0%, #000 100%), #D2EDE8; 
+     opacity: 0.7;
+}

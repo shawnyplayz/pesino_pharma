@@ -1,8 +1,7 @@
-import InnovativeCursorLoader from "@/app/loader/InnovativeCursorLoader";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import { Suspense } from "react";
-import Loading from "./loading";
+import Navbar from "./navbar/page";
+import Footer from "./footer/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,7 +19,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
       <body>
-        <Suspense fallback={<Loading />}>{children}</Suspense>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );
