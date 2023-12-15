@@ -130,82 +130,40 @@ function AboutUs() {
           </div>
           <div className="WhoweAre w-1/2">
             <div className="aboutus_titles my-4">{Essentials.aboutusTitle}</div>
-            <div className="aboutus_desc max-w-xl overflow-clip my-4">
+            <div className="aboutus_desc max-w-xl max-h-96 overflow-y-scroll my-4">
               {Essentials.aboutusDesc}
             </div>
           </div>
         </div>
       </div>
       <div className="bg-home-start">
-        {/* <div className="flex flex-col">
-          <div className=" my-16 aboutus_titles themeColor flex flex-col items-center">
+        <div className="flex flex-col">
+          <div className=" mt-16 text-7xl  themeColor flex flex-col items-center">
             <h1 className="">Why Choose Us</h1>
           </div>
-          <div className="">
-            <div className="first_flex flex flex-col ">
-              {whychooseUs?.map((el, index) => {
-                debugger;
-                return (
-                  <>
-                    <div className="flex flex-row justify-evenly">
-                      <div className="p-16">
-                        <div className="my-2">
-                          <Image src={el?.icon} alt="quality" loading="lazy" />
-                        </div>
-                        <div className="aboutus_titles themeColor">
-                          {el?.title}
-                        </div>
-                        <div className="aboutus_desc">{el?.description}</div>
-                      </div>
-                    </div>
-
-                    {index > 2 ? (
-                      <div className="second_flex flex flex-row justify-evenly">
-                        <div className="p-16">
-                          <div className="my-2">
-                            <Image
-                              src={el?.icon}
-                              alt="quality"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div className="aboutus_titles themeColor">
-                            {el?.title}
-                          </div>
-                          <div className="aboutus_desc">{el?.description}</div>
-                        </div>
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                  </>
-                );
-              })}
-            </div>
-          </div>
-        </div> */}
-        <div className="flex flex-wrap justify-center">
-          {whychooseUs?.map((item, index) => (
-            <div
-              key={index}
-              className={`flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 ${
-                index < 3 ? "mb-4" : "mb-0" // Add margin-bottom for items in the first row
-              }`}
-            >
-              {/* Your content goes here, each item in a flex box */}
-              <div className=" flex justify-center flex-col items-center p-16">
-                <div className="my-8">
-                  <Image src={item?.icon} alt="whychooseUs" />
-                </div>
-                <div className="aboutus_titles themeColor mb-8 ">
-                  {item?.title}
-                </div>
-                <div className="aboutus_desc text-center max-w-7xl overflow-scroll">
-                  {item?.description}
+          <div className="flex flex-wrap justify-center">
+            {whychooseUs?.map((item, index) => (
+              <div
+                key={index}
+                className={`flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 ${
+                  index < 3 ? "mb-4" : "mb-0" // Add margin-bottom for items in the first row
+                }`}
+              >
+                {/* Your content goes here, each item in a flex box */}
+                <div className=" flex justify-center flex-col items-center p-16">
+                  <div className="my-8">
+                    <Image src={item?.icon} alt="whychooseUs" />
+                  </div>
+                  <div className="aboutus_titles themeColor mb-8 ">
+                    {item?.title}
+                  </div>
+                  <div className="aboutus_desc text-center max-w-7xl overflow-scroll">
+                    {item?.description}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       {/* Main Part */}
