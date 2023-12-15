@@ -50,7 +50,8 @@ function Footer() {
             </span>{" "}
           </div>
           <div className="flex flex-col gap-8 font-normal text-2xl">
-            <Link href="/about">About Us</Link>
+            <Link href="/">Home</Link>
+            <Link href="/aboutus">About Us</Link>
             <Link href="/products">Products</Link>
             <Link href="/manufacturing">Manufacturing</Link>
             <Link href="/contact">Contact</Link>
@@ -74,7 +75,7 @@ function Footer() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your e-mail"
                 />
-                <FaArrowCircleRight className="absolute left-80 top-2 text-white text-5xl bg-home-start rounded-full border-none hover:cursor-pointer" />
+                <FaArrowCircleRight className="absolute left-80 top-2 text-cyan-600 bg-white text-5xl bg-home-start rounded-full border-none hover:cursor-pointer" />
               </div>
             </div>
           </div>

@@ -21,6 +21,22 @@
 ::-webkit-scrollbar {
   display: none;
 }
+.aboutus_titles{
+  color: #000;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.aboutus_desc{
+  color: #000;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 .class {
   font-family: var(--font-poppins);
 }
@@ -49,5 +65,7 @@ background: #D2EDE8;
 
 body {
   color: rgb(0,0,0);
+  background-color: #F5F5F5;
+
   
 }
