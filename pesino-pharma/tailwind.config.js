@@ -27,6 +27,7 @@ module.exports = {
         "white-oval": "url('../public/homepage/whiteOval.svg')",
         "react-leaf": "url('../public/homepage/react-leaf.svg')",
         "about-us": "url('../public/aboutus/aboutBanner.jpeg')",
+        "banner-manu": "url('../public/manufacturing/banner.jpeg')",
       },
       fontFamily: {
         sans: ["var(--font-inter)"],
