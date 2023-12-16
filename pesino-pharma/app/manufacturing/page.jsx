@@ -9,7 +9,10 @@ import Quality from "../../public/manufacturing/quality.svg";
 import Globalisation from "../../public/manufacturing/Globalization.svg";
 import Manufacture from "../../public/manufacturing/manufacture.svg";
 import Research from "../../public/manufacturing/Research.svg";
-
+import pic1 from "../../public/manufacturing/pic1.jpg";
+import pic2 from "../../public/manufacturing/pic2.jpg";
+import pic3 from "../../public/manufacturing/pic3.jpg";
+import pic4 from "../../public/manufacturing/pic4.jpeg";
 function Manufacturing() {
   const perks = [
     {
@@ -50,6 +53,24 @@ function Manufacturing() {
       description: "Vorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ];
+  const imagur = [
+    {
+      image: pic1,
+      title: "Manufacturing",
+    },
+    {
+      image: pic2,
+      title: "Manufacturing",
+    },
+    {
+      image: pic3,
+      title: "Manufacturing",
+    },
+    {
+      image: pic4,
+      title: "Manufacturing",
+    },
+  ];
   return (
     <div>
       {/* Banner */}
@@ -83,6 +104,22 @@ function Manufacturing() {
             </div>
           </div>
         ))}
+      </div>
+      {/* four pics */}
+      <div className="">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+          {imagur.map((item, index) => (
+            <div key={index} className="p-8">
+              <div className="">
+                <Image
+                  src={item?.image}
+                  alt={item?.title}
+                  className="max-h-maxh-h-30rem rounded-3xl"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
       {/* four perks above footer */}
       <div className="my-28">

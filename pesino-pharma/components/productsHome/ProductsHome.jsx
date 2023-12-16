@@ -30,7 +30,6 @@ function ProductsHome() {
       <div className="flex flex-col my-8">
         <div className="flex flex-row justify-evenly">
           {ProductHomePage?.map((el) => {
-            debugger;
             return (
               <ProductCards productIcon={el.image} productTitle={el?.title} />
             );
