@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body style={{ width: "100%", height: "0.5rem", overflow: "visible" }}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

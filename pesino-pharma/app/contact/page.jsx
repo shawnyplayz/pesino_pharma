@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div>
       <div
-        className="relative bg-cover bg-center flex"
+        className="relative bg-cover bg-center flex w-fit"
         style={{ height: "auto" }}
       >
         {/* <!-- Background Image --> */}
@@ -17,7 +17,7 @@ function Contact() {
           <div className="relative flex-col flex items-center justify-center h-full text-white px-4 ">
             <div className="flex flex-col w-full h-full justify-start items-center gap-8 my-32">
               <div className="text-white font-medium text-6xl">CONTACT US</div>
-              <div className="w-2/3 flex justify-center font-light text-3xl text-white">
+              <div className="md:w-2/3 flex justify-center font-light text-3xl text-white">
                 <p>
                   Discover high-quality pharmaceutical imports with Pesino
                   Pharma, an esteemed Indian manufacturer and exporter. We
@@ -29,10 +29,10 @@ function Contact() {
                 </p>
               </div>
             </div>
-            <div className="bg-white flex my-32 ">
+            <div className="bg-white my-32 rounded-2xl">
               <div className="flex flex-row w-full text-black">
-                <div className="my-16 p-4 flex justify-center gap-40">
-                  <div className="left_side flex flex-col w-1/2 px-10 ml-8">
+                <div className="my-16 p-4 flex flex-col justify-center gap-40 md:flex-row">
+                  <div className="left_side flex flex-col md:w-1/2 px-10 ml-8">
                     <div className="themeColor text-xl my-1 flex">
                       Contact Us
                     </div>
@@ -80,7 +80,7 @@ function Contact() {
                       </div>
                     </div>
                   </div>
-                  <div className="right_side flex flex-col w-1/2 mr-8">
+                  <div className="right_side flex flex-col md:w-1/2 mr-8">
                     <div className="border-2 shadow-md rounded-3xl bg-blue-700">
                       <div className="bg-white flex w-full mt-8 p-4">
                         <div className="flex flex-col p-8 justify-around w-full gap-10">
@@ -118,7 +118,7 @@ function Contact() {
                 Consult us for the Meds you need now!
               </div>
               <div className="w-full flex justify-center text-center font-light text-3xl text-white">
-                <p className="w-2/3">
+                <p className="md:w-2/3">
                   Whether you are looking for specific medications,
                   collaborations, or have inquiries, our dedicated team is ready
                   to assist you. Consult Pesino Pharma for the meds you need,
