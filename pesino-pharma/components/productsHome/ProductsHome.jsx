@@ -5,18 +5,19 @@ import VitaminSyrup from "../../public/products/99Vitamin_Syrup.svg";
 import Pesiplex from "../../public/products/Pesiplex.svg";
 import Pesivit from "../../public/products/Pesivit.svg";
 import Link from "next/link";
+import images from "../../images.json";
 const ProductHomePage = [
   {
-    title: "99 Vitamin Syrup",
-    image: VitaminSyrup,
+    title: images[6]?.title,
+    image: images[6]?.url,
   },
   {
-    title: "Pesiplex Syrup",
-    image: Pesiplex,
+    title: images[8]?.title,
+    image: images[8]?.url,
   },
   {
-    title: "Pesivit Syrup",
-    image: Pesivit,
+    title: images[1]?.title,
+    image: images[1]?.url,
   },
 ];
 function ProductsHome() {

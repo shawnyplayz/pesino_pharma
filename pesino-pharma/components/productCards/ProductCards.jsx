@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { CldImage } from "next-cloudinary";
 import Image from "next/image";
@@ -14,22 +13,30 @@ function ProductCards(props) {
       <div className="flex flex-col">
         <div className="cardProps ">
           <div className="aasd h-96 w-96 flex justify-center">
-            <Image
+            <CldImage
               src={props?.productIcon}
               className="max-w-5xl"
+              width="600"
+              height="600"
               alt="logo"
               loading="lazy"
             />
           </div>
         </div>
-        <div className="title text-4xl my-8 not-italic text-black font-medium leading-normal">
+        <div className="title flex justify-center text-4xl my-8 not-italic text-black font-medium leading-normal">
           <h1>{props?.productTitle}</h1>
         </div>
-        <div className="text-xl">
-          <h1 className="leading-normal font-normal not-italic text-2xl">
+        {/* <div className="text-xl">
+          <h1
+            className="leading-normal font-normal not-italic text-2xl"
+            onClick={() => {
+              
+              setOpenModal(true);
+            }}
+          >
             View Details
           </h1>
-        </div>
+        </div> */}
       </div>
     );
   } else {

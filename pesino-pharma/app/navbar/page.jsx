@@ -18,7 +18,7 @@ function Navbar() {
             loading="eager"
             priority={true}
           />
-          <span className="self-center text-3xl font-light whitespace-nowrap themeColor">
+          <span className="hidden md:block md:self-center md:text-3xl md:font-light md:whitespace-nowrap themeColor">
             {Essentials.name}
           </span>
         </Link>

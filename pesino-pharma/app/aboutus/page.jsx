@@ -13,6 +13,7 @@ import Globalisation from "../../public/aboutus/Globalization.svg";
 import Manufacture from "../../public/aboutus/manufacture.svg";
 import Import from "../../public/aboutus/Import.svg";
 import Essentials from "../../essentials.json";
+import AOSComponent from "@/components/aos/AOS";
 const whychooseUs = [
   {
     icon: Quality,
@@ -61,58 +62,87 @@ function AboutUs() {
         <div class="absolute inset-0 bg-gradient-to-t from-transparent to-black"></div>
         {/* <!-- Your content goes here --> */}
         <div class="relative flex-col z-10 flex items-center justify-center h-full text-white px-4">
-          <div className="flex flex-col w-full h-full justify-center items-center gap-8">
-            <div className="text-white font-medium text-6xl">About Us</div>
-            <div className="w-2/3 flex justify-center font-light text-3xl text-white">
-              <p>{Essentials.aboutusBanner}</p>
+          <AOSComponent>
+            <div className="flex flex-col w-full h-full justify-center items-center gap-8">
+              <div
+                className="text-white font-medium text-6xl"
+                data-aos="fade-right"
+              >
+                About Us
+              </div>
+              <div
+                className="w-2/3 flex justify-center font-light text-3xl text-white"
+                data-aos="fade-left"
+              >
+                <p>{Essentials.aboutusBanner}</p>
+              </div>
             </div>
-          </div>
+          </AOSComponent>
           <div className="flex flex-col items-center justify-end w-full">
             <div className="w-2/3 bottomBanner">
               <div className="grid grid-cols-4 h-full items-center text-center">
-                <div className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600">
-                  <div className="">
-                    <Image src={values} alt="values" priority loading="eager" />
+                <AOSComponent>
+                  <div
+                    className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
+                    data-aos="flip-right"
+                  >
+                    <div className="">
+                      <Image
+                        src={values}
+                        alt="values"
+                        priority
+                        loading="eager"
+                      />
+                    </div>
+                    <h1 className="themeColor font-medium text-3xl">Values</h1>
                   </div>
-                  <h1 className="themeColor font-medium text-3xl">Values</h1>
-                </div>
-                <div className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600">
-                  <div className="">
-                    <Image
-                      src={partnering}
-                      alt="partnering"
-                      priority
-                      loading="eager"
-                    />
+                  <div
+                    className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
+                    data-aos="fade-down-right"
+                  >
+                    <div className="">
+                      <Image
+                        src={partnering}
+                        alt="partnering"
+                        priority
+                        loading="eager"
+                      />
+                    </div>
+                    <h1 className="themeColor font-medium text-3xl">
+                      Partnering
+                    </h1>
                   </div>
-                  <h1 className="themeColor font-medium text-3xl">
-                    Partnering
-                  </h1>
-                </div>
-                <div className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600">
-                  <div className="">
-                    <Image
-                      src={innovating}
-                      alt="innovating"
-                      priority
-                      loading="eager"
-                    />
+                  <div
+                    className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
+                    data-aos="fade-up-right"
+                  >
+                    <div className="">
+                      <Image
+                        src={innovating}
+                        alt="innovating"
+                        priority
+                        loading="eager"
+                      />
+                    </div>
+                    <h1 className="themeColor font-medium text-3xl">
+                      Innovating
+                    </h1>
                   </div>
-                  <h1 className="themeColor font-medium text-3xl">
-                    Innovating
-                  </h1>
-                </div>
-                <div className="p-4 flex flex-col items-center gap-4">
-                  <div className="">
-                    <Image
-                      src={leading}
-                      alt="leading"
-                      priority
-                      loading="eager"
-                    />
+                  <div
+                    className="p-4 flex flex-col items-center gap-4"
+                    data-aos="fade-up"
+                  >
+                    <div className="">
+                      <Image
+                        src={leading}
+                        alt="leading"
+                        priority
+                        loading="eager"
+                      />
+                    </div>
+                    <h1 className="themeColor font-medium text-3xl">Leading</h1>
                   </div>
-                  <h1 className="themeColor font-medium text-3xl">Leading</h1>
-                </div>
+                </AOSComponent>
               </div>
             </div>
           </div>
@@ -120,26 +150,34 @@ function AboutUs() {
       </div>
       <div className="midPart my-16 p-24">
         <div className="flex flex-row gap-16 justify-center">
-          <div className="w-1/2 ">
-            <Image
-              src={aboutPesino}
-              className="rounded-3xl"
-              loading="lazy"
-              alt="AboutPesino"
-            />
-          </div>
-          <div className="WhoweAre w-1/2">
-            <div className="aboutus_titles my-4">{Essentials.aboutusTitle}</div>
-            <div className="aboutus_desc max-w-xl max-h-96 overflow-y-scroll my-4">
-              {Essentials.aboutusDesc}
+          <AOSComponent>
+            <div className="w-1/2 " data-aos="fade-right">
+              <Image
+                src={aboutPesino}
+                className="rounded-3xl"
+                loading="lazy"
+                alt="AboutPesino"
+              />
             </div>
-          </div>
+            <div className="WhoweAre w-1/2" data-aos="fade-left">
+              <div className="aboutus_titles my-4">
+                {Essentials.aboutusTitle}
+              </div>
+              <div className="aboutus_desc max-w-xl max-h-96 overflow-y-scroll my-4">
+                {Essentials.aboutusDesc}
+              </div>
+            </div>
+          </AOSComponent>
         </div>
       </div>
       <div className="bg-home-start">
         <div className="flex flex-col">
           <div className=" mt-16 text-7xl  themeColor flex flex-col items-center">
-            <h1 className="">Why Choose Us</h1>
+            <AOSComponent>
+              <h1 className="" data-aos="fade-down">
+                Why Choose Us
+              </h1>
+            </AOSComponent>
           </div>
           <div className="flex flex-wrap justify-center">
             {whychooseUs?.map((item, index) => (

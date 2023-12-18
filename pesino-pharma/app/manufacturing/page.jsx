@@ -13,22 +13,23 @@ import pic1 from "../../public/manufacturing/pic1.jpg";
 import pic2 from "../../public/manufacturing/pic2.jpg";
 import pic3 from "../../public/manufacturing/pic3.jpg";
 import pic4 from "../../public/manufacturing/pic4.jpeg";
+import AOSComponent from "@/components/aos/AOS";
 function Manufacturing() {
   const perks = [
     {
       icon: Integrity,
       title: "Integrity",
-      description: "Vorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: Essentials?.Integrity,
     },
     {
       icon: Automation,
       title: "Automation",
-      description: "Vorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: Essentials?.Automation,
     },
     {
       icon: Safety,
       title: "Safety",
-      description: "Vorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: Essentials?.Safety,
     },
   ];
   const footer_perks = [
@@ -82,15 +83,25 @@ function Manufacturing() {
         {/* <!-- Your content goes here --> */}
         <div className="relative flex-col z-10 flex items-center justify-center h-full text-white px-4">
           <div className="flex flex-col w-full h-full justify-center items-center gap-8">
-            <div className="text-white font-medium text-6xl">Manufacturing</div>
-            <div className="w-2/3 flex justify-center font-light text-3xl text-white">
-              <p>{Essentials.aboutusBanner}</p>
-            </div>
+            <AOSComponent>
+              <div
+                className="text-white font-medium text-6xl"
+                data-aos="fade-right"
+              >
+                Manufacturing
+              </div>
+              <div
+                className="md:w-2/3 flex justify-center font-light text-3xl text-white"
+                data-aos="fade-left"
+              >
+                <p>{Essentials.ManufacturingBanner}</p>
+              </div>
+            </AOSComponent>
           </div>
         </div>
       </div>
       {/* three perks */}
-      <div className="flex flex-row justify-evenly my-24">
+      <div className="flex gap-14 md:gap-0 md:flex-row md:justify-evenly my-24 flex-col items-center ">
         {perks?.map((el) => (
           <div className="flex flex-col ">
             <div className="mb-6 flex justify-center">
@@ -107,24 +118,26 @@ function Manufacturing() {
       </div>
       {/* four pics */}
       <div className="">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 p-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
           {imagur.map((item, index) => (
-            <div key={index} className="p-8">
-              <div className="">
-                <Image
-                  src={item?.image}
-                  alt={item?.title}
-                  className="max-h-maxh-h-30rem rounded-3xl"
-                />
+            <AOSComponent>
+              <div key={index} className="p-8" data-aos="flip-up">
+                <div className="">
+                  <Image
+                    src={item?.image}
+                    alt={item?.title}
+                    className="max-h-maxh-h-30rem rounded-3xl"
+                  />
+                </div>
               </div>
-            </div>
+            </AOSComponent>
           ))}
         </div>
       </div>
       {/* four perks above footer */}
-      <div className="my-28">
+      <div className=" md:my-28">
         <div className="p-4">
-          <div className="flex flex-row justify-evenly gap-6">
+          <div className="flex md:flex-row md:justify-evenly gap-16 flex-col">
             {footer_perks?.map((el) => (
               <div className="border-b-8 border-solid border-blue-600 shadow-xl px-7 transform transition-transform duration-300 hover:scale-105">
                 <div className="mb-6">

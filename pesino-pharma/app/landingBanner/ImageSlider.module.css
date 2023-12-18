@@ -1,0 +1,26 @@
+/* components/ImageSlider.module.css */
+.sliderContainer {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.textContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+.slider {
+  overflow: hidden;
+  width: 50%; /* Adjust the width of the slider */
+}
+
+.sliderContent {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 300%;
+  height: auto;
+}

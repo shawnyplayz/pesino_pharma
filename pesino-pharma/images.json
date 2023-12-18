@@ -38,5 +38,17 @@
         "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1702711496/Products/Dinextar_czkdj2.svg",
         "title":"Dinextar",
         "description":"Each Uncoated tablet contains:lorem ipsum"
+    },
+    {
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1702711497/Products/Pesiplex_tmzmmb.svg",
+        "title":"Pesiplex",
+        "description":"Pesiplex Syrup, B Complex"
+    },
+    {
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1702894029/Products/meds_club_akslm8.svg",
+        "title":"MedsClub",
+        "description":"",
+        "width":"600",
+        "height":"600"
     }
 ]

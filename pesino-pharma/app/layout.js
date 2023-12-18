@@ -17,11 +17,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${poppins.variable}`}>
-      <body>
+    <html lang="en">
+      <body style={{ width: "100%", height: "0.5rem", overflow: "visible" }}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

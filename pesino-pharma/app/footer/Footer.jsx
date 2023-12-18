@@ -10,7 +10,7 @@ function Footer() {
   const [email, setEmail] = useState(null);
   return (
     <div className="flex px-28 py-8 w-full mt-20">
-      <div class="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16">
+      <div class="grid w-full grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16">
         <div classname="p-4">
           <div className="flex flex-row mt-8">
             <div className="flex flex-col gap-3">
