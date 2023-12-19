@@ -13,14 +13,15 @@
 .slider {
   overflow: hidden;
   width: 50%; /* Adjust the width of the slider */
+  transform: scale(1.7);
 }
 
 .sliderContent {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  /* transition: transform 0.5s ease-in; */
 }
 
 .slide {
-  width: 300%;
+  width: 100%;
   height: auto;
 }

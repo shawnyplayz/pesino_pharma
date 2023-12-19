@@ -15,7 +15,7 @@ function ProductCards(props) {
           <div className="aasd h-96 w-96 flex justify-center">
             <CldImage
               src={props?.productIcon}
-              className="max-w-5xl"
+              className="max-w-lg"
               width="600"
               height="600"
               alt="logo"

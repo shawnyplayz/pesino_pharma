@@ -7,8 +7,10 @@ import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Essentials from "../../essentials.json";
 import Link from "next/link";
+
 import images from "../../images.json";
 import styles from "./ImageSlider.module.css";
+import AOSComponent from "@/components/aos/AOS";
 function LandingBanner(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -19,7 +21,7 @@ function LandingBanner(props) {
     // Autoplay functionality
     const intervalId = setInterval(() => {
       handleNext();
-    }, 3000); // Adjust the interval (in milliseconds) based on your preference
+    }, 53000); // Adjust the interval (in milliseconds) based on your preference
 
     return () => {
       // Cleanup the interval when the component unmounts
@@ -62,11 +64,11 @@ function LandingBanner(props) {
           </div>
           <div className="flex justify-center items-center">
             <div
-              className=" flex justify-center items-center bg-white-oval bg-contain bg-no-repeat"
-              style={{
-                transform: "scale(1.5)",
-                backgroundSize: "100% 100%",
-              }}
+              className=" flex justify-center items-center"
+              // style={{
+              //   transform: "scale(1.5)",
+              //   backgroundSize: "100% 100%",
+              // }}
             >
               <div className={styles.slider}>
                 <div
@@ -75,17 +77,19 @@ function LandingBanner(props) {
                     transform: `translateX(-${currentIndex * 100}%)`,
                   }}
                 >
-                  {images.map((image, index) => (
-                    <Image
-                      key={index}
-                      src={image?.url}
-                      width={600}
-                      height={200}
-                      alt={`Slide ${index + 1}`}
-                      className={styles.slide}
-                    />
-                  ))}
-
+                  <AOSComponent>
+                    {images.map((image, index) => (
+                      <Image
+                        key={index}
+                        src={image?.url}
+                        width={image?.width ? image.width : "600"}
+                        height={image?.height ? image.height : "600"}
+                        alt={`Slide ${index + 1}`}
+                        className={`${styles.slide} w-full max-w-2xl`}
+                        data-aos="fade-in"
+                      />
+                    ))}
+                  </AOSComponent>
                   {/* {images.map((image, index) => (
                     <Image
                       key={index}
