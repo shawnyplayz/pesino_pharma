@@ -32,12 +32,12 @@ function ProductCards(props) {
     return (
       <div className="flex flex-col items-center -z-30">
         <div className="cardProps flex">
-          <div className="aasd h-96 w-96 flex justify-center">
+          <div className="aasd h-96  flex justify-center">
             <CldImage
               src={props?.content?.url}
-              width="500"
-              height="500"
-              className="max-w-4xl"
+              width="400"
+              height="600"
+              className="object-none !max-w-none md:max-w-lg"
               alt="logo"
             />
           </div>

@@ -1,0 +1,25 @@
+.firstCap{
+    top: 70%;
+    right: 3rem;
+}
+.secondCap{
+top:170%;
+}
+.thridCap{
+    top:270%;
+    right: 0rem;
+}
+@media only screen and (max-width: 600px) {
+    .firstCap {
+      top: 81%;
+      right: 0rem;
+
+    }
+    .secondCap{
+        top:220%;
+    }
+    .thridCap{
+        top:360%;
+
+    }
+  }

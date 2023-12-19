@@ -8,6 +8,7 @@ import cap1 from "../../public/products/Capsule_tr.svg";
 import cap2 from "../../public/products/Capsule_left.svg";
 import cap3 from "../../public/products/Capsule_rb.svg";
 import Essentials from "../../Essentials.json";
+import "./capsule.css";
 import AOSComponent from "@/components/aos/AOS";
 function Products() {
   const [openModal, setOpenModal] = useState(false);
@@ -45,21 +46,16 @@ function Products() {
         <div className="flex text-black text-center font-normal leading-normal text-4xl tracking-widest my-8">
           PRODUCTS
         </div>
-        {/* <div className="absolute left-0 " style={{ top: "170%" }}>
-          <Image
-            src={cap2}
-            alt="capsule"
-            // className="sticky"
-            // style={{ left: "0rem", top: "170%" }}
-          />
-        </div> */}
+        <div className="absolute left-0 secondCap">
+          <Image src={cap2} alt="capsule" className="w-16 md:w-auto" />
+        </div>
 
-        {/* <div className="absolute" style={{ top: "70%", right: "3rem" }}>
-          <Image src={cap1} alt="capsule" />
-        </div> */}
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-20 px-40">
+        <div className="absolute firstCap">
+          <Image src={cap1} alt="capsule" className="w-16 md:w-auto" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-20 px-4">
           {productImages?.map((el, index) => (
-            <div className="p-16 " key={index}>
+            <div className="" key={index}>
               <ProductCards
                 toggleProductPage={true}
                 content={el}
@@ -68,11 +64,10 @@ function Products() {
               />
             </div>
           ))}
-          {/* <CModal toggle={openModal} index={index}/> */}
         </div>
-        {/* <div className="absolute" style={{ top: "270%", right: "0rem" }}>
-          <Image src={cap3} alt="capsule" />
-        </div> */}
+        <div className="absolute thridCap">
+          <Image src={cap3} alt="capsule" className="w-10 md:w-auto" />
+        </div>
       </div>
     </div>
   );

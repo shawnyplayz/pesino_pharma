@@ -36,22 +36,26 @@ function Manufacturing() {
     {
       icon: Quality,
       title: "Quality",
-      description: "Vorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Pesino Pharm's Quality Operations employs cGMP norms, validated processes, and rigorous controls to ensure the production of drugs with unwavering quality, purity, and efficacy.",
     },
     {
       icon: Manufacture,
       title: "Manufacture",
-      description: "Vorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Pesino Pharma, aligning with WHO standards, operates a cutting-edge facility with automated machinery, ensuring maximum efficiency through Total Quality Management in Production, Stores, Quality Control, Quality Assurance, and Engineering Services.",
     },
     {
       icon: Globalisation,
       title: "Globalisation",
-      description: "Vorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Seeking strategic business partners for a Joint Venture in Marketing and Distribution to ensure total customer and consumer satisfaction for Pesino Pharma's brands.",
     },
     {
       icon: Research,
       title: "Research",
-      description: "Vorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Pesino Pharma boasts sophisticated R&D infrastructure, including state-of-the-art plants and machinery, driving innovation in new molecule formulations, drug delivery systems, and efficient dosage formulations, led by a highly skilled team of pharmaceutical experts with over 20 years of experience.",
     },
   ];
   const imagur = [
@@ -144,7 +148,7 @@ function Manufacturing() {
                   <Image src={el?.icon} alt={el?.title} />
                 </div>
                 <div className="mb-4 text-3xl font-medium">{el?.title}</div>
-                <div className="mb-4 text-xl max-h-80 overflow-y-scroll">
+                <div className="mb-4 text-xl  overflow-y-scroll">
                   {el?.description}
                 </div>
               </div>
