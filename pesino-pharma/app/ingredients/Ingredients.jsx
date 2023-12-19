@@ -36,7 +36,7 @@ function BetterIngredients() {
           <div className="salutation font-normal leading-normal text-5xl">
             <p> {Essentials.bi}</p>
           </div>
-          <div className="desc w-96 text-2xl font-normal not-italic leading-normal">
+          <div className="desc max-w-96 text-2xl font-normal not-italic leading-normal">
             <p> {Essentials.biDesc}</p>
           </div>
         </div>

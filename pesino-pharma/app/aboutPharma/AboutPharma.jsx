@@ -47,11 +47,11 @@ const Benefits = [
 function AboutPharma() {
   return (
     <div className="bg-home-start w-full h-auto">
-      <div className="flex flex-row gap-44 justify-center mt-8">
+      <div className="flex flex-col p-4 md:flex-row gap-44 justify-center mt-8">
         {/* left side P */}
         <AOSComponent>
           <div
-            className="flex flex-row gap-5 my-24 w-1/2 justify-center"
+            className="flex flex-row gap-5 mt-14 md:w-1/2 justify-center"
             data-aos="fade-right"
           >
             <div className="p-stand">
@@ -71,7 +71,7 @@ function AboutPharma() {
                   loading="lazy"
                 />
               </div>
-              <div className="flex flex-row w-full gap-5">
+              <div className="flex flex-col md:flex-row w-full gap-5">
                 <Image src={Pcircle} className="" alt="logo" loading="lazy" />
                 <Image src={Pleaf} className="" alt="logo" loading="lazy" />
               </div>
@@ -79,8 +79,8 @@ function AboutPharma() {
           </div>
           {/* right side content */}
           <div
-            className="flex flex-col gap-5 my-24 w-1/2 items-start pl-16"
-            data-aos="fade-left"
+            className="flex flex-col gap-5 my-24 md:w-1/2 items-start "
+            data-aos="zoom-in"
           >
             <div className="title text-2xl font-normal tracking-widest ">
               {Essentials.aboutPharma}
@@ -96,14 +96,14 @@ function AboutPharma() {
       </div>
       <AOSComponent>
         <div className="Benefits">
-          <div className="flex flex-col px-20" data-aos="zoom-in-up">
+          <div className="flex flex-col px-4" data-aos="zoom-in-up">
             <div className="title text-2xl font-normal tracking-widest my-2">
               {Essentials.aboutPharma}
             </div>
             <div className="salutation font-normal leading-normal text-5xl my-2">
               <p> {Essentials.benefitsPharma}</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-4">
               {Benefits.map((el) => (
                 <div class="p-4">
                   <div className="">
@@ -117,10 +117,10 @@ function AboutPharma() {
                     </div> */}
                     </div>
 
-                    <div className="title my-8 text-3xl font-normal">
+                    <div className="title  my-8 text-3xl font-normal">
                       {el?.title}
                     </div>
-                    <div className="text-xl w-96 max-h-52 overflow-scroll font-normal">
+                    <div className="text-xl max-w-96 max-h-52 overflow-scroll font-normal">
                       {el?.desc}
                     </div>
                   </div>

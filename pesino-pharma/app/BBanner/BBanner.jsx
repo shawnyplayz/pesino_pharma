@@ -3,7 +3,7 @@ import Essentials from "../../essentials.json";
 function BBanner() {
   return (
     <div className="flex w-full bg-themeColor justify-center items-center">
-      <div className="flex text-white text-3xl leading-normal font-light my-2">
+      <div className="flex text-center text-white text-3xl leading-normal font-light my-2">
         <p>{Essentials.BBanner}</p>
       </div>
     </div>

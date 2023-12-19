@@ -21,7 +21,7 @@ function LandingBanner(props) {
     // Autoplay functionality
     const intervalId = setInterval(() => {
       handleNext();
-    }, 53000); // Adjust the interval (in milliseconds) based on your preference
+    }, 3000); // Adjust the interval (in milliseconds) based on your preference
 
     return () => {
       // Cleanup the interval when the component unmounts
@@ -32,7 +32,7 @@ function LandingBanner(props) {
   return (
     <div className="bg-home-start flex w-full h-auto">
       <div className="flex  justify-center items-center w-full my-16">
-        <div className="grid md:grid-cols-2 gap-4 w-2/3">
+        <div className="grid md:grid-cols-2 gap-20 md:gap-4 w-2/3">
           <div className="">
             <div className="text-7xl font-thin leading-normal my-2">
               <h1 className="mb-0">{Essentials.Banner_Left_First}</h1>
@@ -62,14 +62,8 @@ function LandingBanner(props) {
               </button>
             </Link>
           </div>
-          <div className="flex justify-center items-center">
-            <div
-              className=" flex justify-center items-center"
-              // style={{
-              //   transform: "scale(1.5)",
-              //   backgroundSize: "100% 100%",
-              // }}
-            >
+          <div className="flex justify-center items-center  mb-8 md:mb-0">
+            <div className=" flex justify-center items-center">
               <div className={styles.slider}>
                 <div
                   className={styles.sliderContent}

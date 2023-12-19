@@ -47,8 +47,8 @@ line-height: normal;
   font-family: var(--font-poppins);
 }
 .cardProps{
-  width: 465px;
-  height: 627px;
+  max-width: 465px;
+  max-height: 627px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
