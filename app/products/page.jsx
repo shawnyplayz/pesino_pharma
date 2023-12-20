@@ -19,7 +19,7 @@ function Products() {
     <div>
       <div className="relative bg-cover bg-center h-40rem">
         {/* <!-- Background Image --> */}
-        <div className="absolute inset-0 bg-cover bg-center bg-banner-manu"></div>{" "}
+        <div className="absolute inset-0 bg-cover bg-center bg-banner-products"></div>{" "}
         {/* <!-- Gradient Overlay --> */}
         <div className="absolute inset-0 bg-gradient-to-bl from-transparent to-blue-800"></div>
         {/* <!-- Your content goes here --> */}

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import bannerManu from "../../public/manufacturing/banner.jpeg";
 import Essentials from "../../essentials.json";
 import Integrity from "../../public/manufacturing/Integrity.svg";
 import Automation from "../../public/manufacturing/Automation.svg";
@@ -9,11 +8,8 @@ import Quality from "../../public/manufacturing/quality.svg";
 import Globalisation from "../../public/manufacturing/Globalization.svg";
 import Manufacture from "../../public/manufacturing/manufacture.svg";
 import Research from "../../public/manufacturing/Research.svg";
-import pic1 from "../../public/manufacturing/pic1.jpg";
-import pic2 from "../../public/manufacturing/pic2.jpg";
-import pic3 from "../../public/manufacturing/pic3.jpg";
-import pic4 from "../../public/manufacturing/pic4.jpeg";
 import AOSComponent from "@/components/aos/AOS";
+import misc from "../../misc.json";
 function Manufacturing() {
   const perks = [
     {
@@ -60,19 +56,19 @@ function Manufacturing() {
   ];
   const imagur = [
     {
-      image: pic1,
+      image: misc[3]?.url,
       title: "Manufacturing",
     },
     {
-      image: pic2,
+      image: misc[4]?.url,
       title: "Manufacturing",
     },
     {
-      image: pic3,
+      image: misc[5]?.url,
       title: "Manufacturing",
     },
     {
-      image: pic4,
+      image: misc[6]?.url,
       title: "Manufacturing",
     },
   ];
@@ -130,7 +126,9 @@ function Manufacturing() {
                   <Image
                     src={item?.image}
                     alt={item?.title}
-                    className="max-h-maxh-h-30rem rounded-3xl"
+                    className="max-h-maxh-h-30rem rounded-3xl object-fill"
+                    width={1000}
+                    height={1000}
                   />
                 </div>
               </div>

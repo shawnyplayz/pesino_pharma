@@ -84,27 +84,6 @@ function Contact() {
                     <div className="border-2 shadow-md rounded-3xl bg-blue-700">
                       <div className="bg-white flex w-full mt-8 p-4">
                         <div className="flex flex-col p-8 justify-around w-full gap-10">
-                          {/* <form
-                            onSubmit={handleSubmit}
-                            // className="flex flex-col items-center"
-                          >
-                            <div className="flex flex-row justify-start gap-16">
-                              <div className="flex flex-col">
-                                <label className="mb-1">First Name</label>
-                                <input
-                                  className="border-2 border-solid border-blue-500 p-2 rounded-lg"
-                                  placeholder="First Name"
-                                />
-                              </div>
-                              <div className="flex flex-col">
-                                <label className="mb-1">Last Name</label>
-                                <input
-                                  className="border-2 border-solid border-blue-500 p-2 rounded-lg"
-                                  placeholder="Last Name"
-                                />
-                              </div>
-                            </div>
-                          </form> */}
                           <ContactForm />
                         </div>
                       </div>

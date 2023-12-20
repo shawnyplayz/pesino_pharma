@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev --port 3000",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint",
+    "export":"next export"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",

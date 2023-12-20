@@ -5,8 +5,7 @@ import values from "../../public/aboutus/values.svg";
 import partnering from "../../public/aboutus/partnering.svg";
 import innovating from "../../public/aboutus/innovating.svg";
 import leading from "../../public/aboutus/leading.svg";
-import aboutBanner from "../../public/aboutus/aboutBanner.jpeg";
-import aboutPesino from "../../public/aboutus/aboutPesino.jpeg";
+
 import Quality from "../../public/aboutus/quality.svg";
 import Export from "../../public/aboutus/Export.svg";
 import Globalisation from "../../public/aboutus/Globalization.svg";
@@ -14,6 +13,7 @@ import Manufacture from "../../public/aboutus/manufacture.svg";
 import Import from "../../public/aboutus/Import.svg";
 import Essentials from "../../essentials.json";
 import AOSComponent from "@/components/aos/AOS";
+import misc from "../../misc.json";
 const whychooseUs = [
   {
     icon: Quality,
@@ -54,9 +54,9 @@ function AboutUs() {
         {/* <!-- Background Image --> */}
         <div
           class="absolute inset-0 bg-cover bg-center bg-about-us"
-          style={{
-            backgroundImage: { aboutBanner },
-          }}
+          // style={{
+          //   backgroundImage: { aboutBanner },
+          // }}
         ></div>{" "}
         {/* <!-- Gradient Overlay --> */}
         <div class="absolute inset-0 bg-gradient-to-t from-transparent to-black"></div>
@@ -157,10 +157,12 @@ function AboutUs() {
           <AOSComponent>
             <div className="md:w-1/2" data-aos="fade-right">
               <Image
-                src={aboutPesino}
-                className="rounded-3xl"
+                src={misc[2]?.url}
+                className="rounded-3xl object-fill"
                 loading="lazy"
                 alt="AboutPesino"
+                width={1000}
+                height={1000}
               />
             </div>
             <div className="WhoweAre md:w-1/2" data-aos="flip-right ">

@@ -26,9 +26,13 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "white-oval": "url('../public/homepage/whiteOval.svg')",
         "react-leaf": "url('../public/homepage/react-leaf.svg')",
-        "about-us": "url('../public/aboutus/aboutBanner.jpeg')",
-        "banner-manu": "url('../public/manufacturing/banner.jpeg')",
-        "hybridwhite-Oval": "url('../public/homepage/hybridwhiteOval.webp')",
+        // "about-us": "url('../public/aboutus/aboutBanner.jpeg')",
+        "about-us":
+          "url('https://res.cloudinary.com/dpauqvsd6/image/upload/v1703068198/aboutBanner_fkcyqv.webp')",
+        "banner-manu":
+          "url('https://res.cloudinary.com/dpauqvsd6/image/upload/v1703069152/manufacturing_nnuq89.webp')",
+        "banner-products":
+          "url('https://res.cloudinary.com/dpauqvsd6/image/upload/v1703070017/productBanner_fnb8jg.webp')",
       },
       fontFamily: {
         sans: ["var(--font-inter)"],

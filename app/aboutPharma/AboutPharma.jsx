@@ -1,6 +1,4 @@
 import React from "react";
-import Prect from "../../public/homepage/p-rect.jpeg";
-import Pcurve from "../../public/homepage/p-curve.jpeg";
 import Pcircle from "../../public/homepage/circle-p.svg";
 import Pleaf from "../../public/homepage/react-leaf.svg";
 import Image from "next/image";
@@ -9,7 +7,8 @@ import { GoOrganization } from "react-icons/go";
 import { GiArchiveResearch, GiFactory, GiMedicines } from "react-icons/gi";
 import { TbWorldDollar } from "react-icons/tb";
 import AOSComponent from "@/components/aos/AOS";
-
+import images from "../../images.json";
+import misc from "../../misc.json";
 import "./aboutPharma.css";
 import { FaGlobeAmericas } from "react-icons/fa";
 const Benefits = [
@@ -56,19 +55,23 @@ function AboutPharma() {
           >
             <div className="p-stand">
               <Image
-                src={Prect}
+                src={misc[0]?.url}
                 className="P-rect"
                 alt="about us"
                 loading="lazy"
+                width={1000}
+                height={1000}
               />
             </div>
             <div className="flex flex-col gap-5">
               <div className="p-cur">
                 <Image
-                  src={Pcurve}
+                  src={misc[1]?.url}
                   className="p-curve"
                   alt="logo"
                   loading="lazy"
+                  width={1000}
+                  height={1000}
                 />
               </div>
               <div className="flex flex-col md:flex-row w-full gap-5">

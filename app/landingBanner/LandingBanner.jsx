@@ -1,13 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import UnderLine from "../../public/homepage/BannerUnderLiner.svg";
-import whiteOval from "../../public/homepage/whiteOval.svg";
-import medsClub from "../../public/homepage/meds_club.svg";
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Essentials from "../../essentials.json";
 import Link from "next/link";
-
 import images from "../../images.json";
 import styles from "./ImageSlider.module.css";
 import AOSComponent from "@/components/aos/AOS";
