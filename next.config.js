@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
     loader: "default",
-    path: "https://noop/",
+    path: "",
     remotePatterns: [
       {
         protocol: "https",
