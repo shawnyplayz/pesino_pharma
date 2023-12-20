@@ -12,6 +12,18 @@ function ContactForm() {
   const [isButtonAnimated, setIsButtonAnimated] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
+  const sendMail = async (e) => {
+    e.preventDefault();
+    const response = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    console.log(await response.json());
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -36,7 +48,7 @@ function ContactForm() {
       setIsButtonAnimated(true);
       return;
     }
-
+    sendMail(e);
     // Perform submission logic here (e.g., send data to the server)
 
     setIsSubmitting(true);
@@ -44,6 +56,12 @@ function ContactForm() {
     // Simulate API call (you would replace this with your actual submission logic)
     setTimeout(() => {
       alert("Form submitted successfully!");
+      setFormData({
+        Fname: "",
+        Lname: "",
+        email: "",
+        message: "",
+      });
       setIsSubmitting(false);
       setIsButtonAnimated(false);
     }, 1000);
