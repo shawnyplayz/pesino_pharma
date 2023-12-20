@@ -1,12 +1,12 @@
 import React from "react";
 import "./aboutus.css";
 import Image from "next/image";
-import values from "../../public/aboutus/values.svg";
-import partnering from "../../public/aboutus/partnering.svg";
-import innovating from "../../public/aboutus/innovating.svg";
-import leading from "../../public/aboutus/leading.svg";
+import values from "../../public/aboutus/Values.svg";
+import partnering from "../../public/aboutus/Partnering.svg";
+import innovating from "../../public/aboutus/Innovating.svg";
+import leading from "../../public/aboutus/Leading.svg";
 
-import Quality from "../../public/aboutus/quality.svg";
+import Quality from "../../public/aboutus/Quality.svg";
 import Export from "../../public/aboutus/Export.svg";
 import Globalisation from "../../public/aboutus/Globalization.svg";
 import Manufacture from "../../public/aboutus/manufacture.svg";

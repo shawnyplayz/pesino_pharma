@@ -7,7 +7,7 @@ import Image from "next/image";
 import cap1 from "../../public/products/Capsule_tr.svg";
 import cap2 from "../../public/products/Capsule_left.svg";
 import cap3 from "../../public/products/Capsule_rb.svg";
-import Essentials from "../../Essentials.json";
+import Essentials from "../../essentials.json";
 import "./capsule.css";
 import AOSComponent from "@/components/aos/AOS";
 function Products() {
