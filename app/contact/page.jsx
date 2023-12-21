@@ -1,6 +1,13 @@
 import ContactForm from "@/components/contactform/ContactForm";
+import Head from "next/head";
 import React from "react";
-
+import defaultMetadata from "@/metadata";
+export const metadata = {
+  ...defaultMetadata,
+  title: "Contact Us",
+  description:
+    "Contact us for inquiries, collaborations, and more. Your Company Name is here to assist you.",
+};
 function Contact() {
   return (
     <div>

@@ -14,6 +14,8 @@ import Import from "../../public/aboutus/Import.svg";
 import Essentials from "../../essentials.json";
 import AOSComponent from "@/components/aos/AOS";
 import misc from "../../misc.json";
+import defaultMetadata from "@/metadata";
+import Head from "next/head";
 const whychooseUs = [
   {
     icon: Quality,
@@ -46,6 +48,12 @@ const whychooseUs = [
       "At Pesino Pharma, we prioritize sourcing the finest ingredients globally to produce pharmaceuticals of the highest standard. Trust us for reliable imports that contribute to the superior quality and efficacy of our pharmaceutical offerings. Explore the world of Pesino Pharma for excellence in pharmaceutical imports and cutting-edge healthcare solutions.",
   },
 ];
+export const metadata = {
+  ...defaultMetadata,
+  title: "About Us",
+  description:
+    "Learn more about Your Company Name and our commitment to excellence in pharmaceuticals. Discover our history, values, and mission.",
+};
 function AboutUs() {
   return (
     <div>

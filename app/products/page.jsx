@@ -10,6 +10,7 @@ import cap3 from "../../public/products/Capsule_rb.svg";
 import Essentials from "../../essentials.json";
 import "./capsule.css";
 import AOSComponent from "@/components/aos/AOS";
+
 function Products() {
   const [openModal, setOpenModal] = useState(false);
   const toggleModal = (verdict) => {

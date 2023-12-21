@@ -10,6 +10,14 @@ import Manufacture from "../../public/manufacturing/Manufacture.svg";
 import Research from "../../public/manufacturing/Research.svg";
 import AOSComponent from "@/components/aos/AOS";
 import misc from "../../misc.json";
+import defaultMetadata from "@/metadata";
+import Head from "next/head";
+export const metadata = {
+  ...defaultMetadata,
+  title: "Manufacturing",
+  description:
+    "Explore the advanced manufacturing processes at Your Company Name. Learn about our state-of-the-art facilities, quality controls, and commitment to pharmaceutical excellence.",
+};
 function Manufacturing() {
   const perks = [
     {
