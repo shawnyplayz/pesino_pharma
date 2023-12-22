@@ -14,7 +14,7 @@ export async function POST(request) {
 
     const mailOpttion = {
       from: "innocursor@gmail.com",
-      to: "innocursor@gmail.com",
+      to: "pesino.group@gmail.com",
       subject: "Contact Us",
       html: `
         <h2>Hello, this is ${Fname} ${Lname}<h2>

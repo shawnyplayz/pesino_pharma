@@ -12,7 +12,7 @@ function Contact() {
   return (
     <div>
       <div
-        className="relative bg-cover bg-center flex w-fit"
+        className="relative bg-cover bg-center flex "
         style={{ height: "auto" }}
       >
         {/* <!-- Background Image --> */}
@@ -20,11 +20,13 @@ function Contact() {
         {/* <!-- Gradient Overlay --> */}
         <div className="absolute inset-0 bg-gradient-to-bl from-transparent to-blue-900"></div>
         {/* <!-- Your content goes here --> */}
-        <div className="flex flex-col">
-          <div className="relative flex-col flex items-center justify-center h-full text-white px-4 ">
+        <div className="flex flex-col w-full">
+          <div className="relative flex-col flex items-center justify-center h-full text-white px-2 md:px-4 ">
             <div className="flex flex-col w-full h-full justify-start items-center gap-8 my-32">
-              <div className="text-white font-medium text-6xl">CONTACT US</div>
-              <div className="md:w-2/3 flex justify-center font-light text-3xl text-white">
+              <div className="text-white font-medium text-6xl  text-center">
+                CONTACT US
+              </div>
+              <div className="md:w-2/3 flex justify-center font-light text-3xl text-white text-center">
                 <p>
                   Discover high-quality pharmaceutical imports with Pesino
                   Pharma, an esteemed Indian manufacturer and exporter. We
@@ -37,13 +39,13 @@ function Contact() {
               </div>
             </div>
             <div className="bg-white my-32 rounded-2xl">
-              <div className="flex flex-row w-full text-black">
-                <div className="my-16 p-4 flex flex-col justify-center gap-40 md:flex-row">
-                  <div className="left_side flex flex-col md:w-1/2 px-10 ml-8">
-                    <div className="themeColor text-xl my-1 flex">
+              <div className="flex flex-col md:flex-row w-full text-black">
+                <div className="my-16 md:p-4 flex flex-col justify-center gap-40 md:flex-row">
+                  <div className="left_side flex flex-col px-4 md:w-1/2 md:px-10 md:ml-8">
+                    <div className="themeColor text-xl my-1 flex text-center">
                       Contact Us
                     </div>
-                    <div className="text-4xl font-semibold my-4  ">
+                    <div className="text-4xl font-semibold my-4">
                       Get In Touch
                     </div>
                     <div className="text-xl">
@@ -56,7 +58,7 @@ function Contact() {
                       </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 my-8">
-                      <div className="p-4 flex flex-col">
+                      <div className="md:p-4 flex flex-col">
                         <h1 className="text-2xl my-2 font-semibold">
                           Phone Number
                         </h1>
@@ -87,10 +89,10 @@ function Contact() {
                       </div>
                     </div>
                   </div>
-                  <div className="right_side flex flex-col md:w-1/2 mr-8">
+                  <div className="right_side flex flex-col items-center md:w-1/2 md:first-letter:mr-8">
                     <div className="border-2 shadow-md rounded-3xl bg-blue-700">
                       <div className="bg-white flex w-full mt-8 p-4">
-                        <div className="flex flex-col p-8 justify-around w-full gap-10">
+                        <div className="flex flex-col p-8 justify-around gap-10">
                           <ContactForm />
                         </div>
                       </div>

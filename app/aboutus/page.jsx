@@ -60,18 +60,13 @@ function AboutUs() {
       {/* Banner */}
       <div class="relative bg-cover bg-center  md:h-40rem">
         {/* <!-- Background Image --> */}
-        <div
-          class="absolute inset-0 bg-cover bg-center bg-about-us"
-          // style={{
-          //   backgroundImage: { aboutBanner },
-          // }}
-        ></div>{" "}
+        <div class="absolute inset-0 bg-cover bg-center bg-about-us"></div>{" "}
         {/* <!-- Gradient Overlay --> */}
         <div class="absolute inset-0 bg-gradient-to-t from-transparent to-black"></div>
         {/* <!-- Your content goes here --> */}
         <div class="relative flex-col z-10 flex items-center justify-center h-full text-white px-4 gap-8">
           <AOSComponent>
-            <div className="flex flex-col w-full h-full justify-center items-center gap-8">
+            <div className="flex flex-col w-full h-full justify-center items-center gap-8 my-8 md:my-0">
               <div
                 className="text-white font-medium text-6xl"
                 data-aos="fade-right"
@@ -91,7 +86,7 @@ function AboutUs() {
               <div className="grid grid-cols-4 h-full items-center text-center">
                 <AOSComponent>
                   <div
-                    className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
+                    className="p-1 md:p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
                     data-aos="flip-right"
                   >
                     <div className="h-16">
@@ -102,12 +97,12 @@ function AboutUs() {
                         loading="eager"
                       />
                     </div>
-                    <h1 className="themeColor font-medium text-xl md:text-3xl">
+                    <h1 className="themeColor font-medium text-sm md:text-3xl">
                       Values
                     </h1>
                   </div>
                   <div
-                    className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
+                    className="p-1 md:p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
                     data-aos="fade-down-right"
                   >
                     <div className="h-16">
@@ -118,12 +113,12 @@ function AboutUs() {
                         loading="eager"
                       />
                     </div>
-                    <h1 className="themeColor font-medium text-xl md:text-3xl">
+                    <h1 className="themeColor font-medium text-sm md:text-3xl">
                       Partnering
                     </h1>
                   </div>
                   <div
-                    className="p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
+                    className="p-1 md:p-4 flex flex-col items-center gap-4 border-r-2 border-cyan-600"
                     data-aos="fade-up-right"
                   >
                     <div className="h-16">
@@ -134,7 +129,7 @@ function AboutUs() {
                         loading="eager"
                       />
                     </div>
-                    <h1 className="themeColor font-medium text-xl md:text-3xl">
+                    <h1 className="themeColor font-medium text-sm md:text-3xl">
                       Innovating
                     </h1>
                   </div>
@@ -150,7 +145,7 @@ function AboutUs() {
                         loading="eager"
                       />
                     </div>
-                    <h1 className="themeColor font-medium text-xl md:text-3xl">
+                    <h1 className="themeColor font-medium text-sm md:text-3xl">
                       Leading
                     </h1>
                   </div>

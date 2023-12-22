@@ -72,64 +72,66 @@ function ContactForm() {
       onMouseMove={handleMouseMove}
       // className="flex flex-col items-center"
     >
-      <div className="flex flex-row justify-start gap-16">
+      <div className="gap-8">
+        <div className="flex flex-col md:flex-row justify-start gap-4 md:gap-16">
+          <div className="flex flex-col">
+            <label className="mb-1">First Name</label>
+            <input
+              type="text"
+              className="border-2 border-solid border-blue-500 p-2 rounded-lg"
+              placeholder="First Name"
+              name="Fname"
+              value={formData.Fname}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="flex flex-col">
+            <label className="mb-1">Last Name</label>
+            <input
+              type="text"
+              className="border-2 border-solid border-blue-500 p-2 rounded-lg"
+              placeholder="Last Name"
+              name="Lname"
+              value={formData.Lname}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
         <div className="flex flex-col">
-          <label className="mb-1">First Name</label>
+          <label className="mb-1">Email-id</label>
           <input
-            type="text"
+            type="email"
             className="border-2 border-solid border-blue-500 p-2 rounded-lg"
-            placeholder="First Name"
-            name="Fname"
-            value={formData.Fname}
+            placeholder="Email"
+            name="email"
+            value={formData.email}
             onChange={handleChange}
           />
         </div>
         <div className="flex flex-col">
-          <label className="mb-1">Last Name</label>
-          <input
-            type="text"
+          <label className="mb-1">Message</label>
+          <textarea
             className="border-2 border-solid border-blue-500 p-2 rounded-lg"
-            placeholder="Last Name"
-            name="Lname"
-            value={formData.Lname}
+            name="message"
+            value={formData.message}
             onChange={handleChange}
           />
         </div>
-      </div>
-      <div className="flex flex-col">
-        <label className="mb-1">Email-id</label>
-        <input
-          type="email"
-          className="border-2 border-solid border-blue-500 p-2 rounded-lg"
-          placeholder="Email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </div>
-      <div className="flex flex-col">
-        <label className="mb-1">Message</label>
-        <textarea
-          className="border-2 border-solid border-blue-500 p-2 rounded-lg"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-        />
-      </div>
-      <div className="flex my-8 w-full">
-        <button
-          type="submit"
-          className={`bg-blue-500 text-white px-4 py-2 transition-transform duration-300 ${
-            isSubmitting
-              ? "transform translate-x-20"
-              : isButtonAnimated
-              ? `transform translate-x-${cursorPosition.x / 10}`
-              : ""
-          }`}
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? "Submitting..." : "Submit"}
-        </button>
+        <div className="flex my-8 w-full">
+          <button
+            type="submit"
+            className={`bg-blue-500 text-white px-4 py-2 transition-transform duration-300 ${
+              isSubmitting
+                ? "transform translate-x-20"
+                : isButtonAnimated
+                ? `transform translate-x-${cursorPosition.x / 10}`
+                : ""
+            }`}
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </button>
+        </div>
       </div>
     </form>
   );
