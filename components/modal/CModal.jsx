@@ -9,7 +9,7 @@ function CModal(props) {
           className="flex flex-col fixed z-50 w-full h-full justify-center items-center bg-opacity-60"
           style={{ background: "rgba(169, 169, 169, 0.8)" }}
         >
-          <div className="bg-white rounded-2xl flex w-2/3 h-96 flex-col md:flex-row gap-6 p-5 justify-around items-center ">
+          <div className="bg-white rounded-2xl flex md:w-2/3 md:h-96 flex-col md:flex-row gap-6 p-5 justify-around items-center ">
             <div className="max-w-xs p-4 ">
               <Image
                 src={props?.content?.url}
