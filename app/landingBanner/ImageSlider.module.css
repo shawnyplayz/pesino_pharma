@@ -21,12 +21,15 @@
     transform: scale(1.8);
    }
 }
-.sliderContent {
+.sliderContent{
   display: flex;
   /* transition: transform 0.5s ease-in; */
+  /* transition: opacity 0.9s ease; */
 }
 
-.slide {
+.slide img {
   width: 100%;
   height: auto;
-}
+  transition: opacity 0.9s ease;
+
+  }

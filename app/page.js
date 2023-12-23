@@ -1,6 +1,8 @@
 import Main from "./main/page";
 import "./globals.css";
 import defaultMetadata from "@/metadata";
+import { Suspense } from "react";
+import Loading from "./loading";
 export const metadata = {
   ...defaultMetadata,
   title: "Home Page",
@@ -8,8 +10,10 @@ export const metadata = {
 };
 export default function Home() {
   return (
-    <main>
-      <Main />
-    </main>
+    <Suspense fallback={<Loading />}>
+      <main>
+        <Main />
+      </main>
+    </Suspense>
   );
 }

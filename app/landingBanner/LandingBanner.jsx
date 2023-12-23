@@ -81,16 +81,6 @@ function LandingBanner(props) {
                       />
                     ))}
                   </AOSComponent>
-                  {/* {images.map((image, index) => (
-                    <Image
-                      key={index}
-                      src={image?.url}
-                      width={image?.width ? image.width : "600"}
-                      height={image?.height ? image.height : "600"}
-                      alt={`Slide ${index + 1}`}
-                      className={styles.slide}
-                    />
-                  ))} */}
                 </div>
               </div>
             </div>

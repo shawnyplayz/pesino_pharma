@@ -21,7 +21,6 @@ function ContactForm() {
       },
       body: JSON.stringify(formData),
     });
-    console.log(await response.json());
   };
 
   const handleChange = (e) => {

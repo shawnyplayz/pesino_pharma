@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import logo from "../../public/next.svg";
 import Image from "next/image";
 import Essentials from "../../essentials.json";
@@ -8,6 +8,26 @@ import { FaArrowCircleRight, FaRegArrowAltCircleRight } from "react-icons/fa";
 
 function Footer() {
   const [email, setEmail] = useState(null);
+  const subscription = useRef("");
+  const sendMail = async (e) => {
+    e.preventDefault();
+    await fetch("/api/subscribe", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(email),
+    }).then((el) => {
+      debugger;
+      if (el?.status > 200 || el?.status < 400) {
+        alert("Subscribed successfully!");
+        setEmail(null);
+        subscription.current.value = null;
+      } else {
+        alert("We're facing some issue right now, try later..");
+      }
+    });
+  };
   return (
     <div className="flex pl-4 py-8 md:px-28 md:py-8 w-full mt-20">
       <div class="grid w-full grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-16 ">
@@ -66,7 +86,7 @@ function Footer() {
             </div>
             <div className="flex flex-col justify-center gap-10 h-full font-normal text-2xl">
               <div className="">{Essentials?.footer_Subscribe}</div>
-              <div className="Inputs relative">
+              <div className="Inputs relative flex items-center gap-4">
                 <input
                   className="w-72 h-16 border border-solid border-gray-500 p-2 text-lg"
                   style={{ borderRadius: "100px" }}
@@ -74,8 +94,13 @@ function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your e-mail"
+                  ref={subscription}
                 />
                 {/* <FaArrowCircleRight className="absolute left-56 md:left-80 top-2 text-cyan-600 bg-white text-5xl bg-home-start rounded-full border-none hover:cursor-pointer" /> */}
+                <FaArrowCircleRight
+                  className="text-cyan-600 bg-white text-5xl bg-home-start rounded-full border-none hover:cursor-pointer"
+                  onClick={sendMail}
+                />
               </div>
             </div>
           </div>
