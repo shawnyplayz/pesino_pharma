@@ -5,16 +5,16 @@ import Link from "next/link";
 import images from "../../images.json";
 const ProductHomePage = [
   {
-    title: images[6]?.title,
-    image: images[6]?.url,
+    title: images[12]?.title,
+    image: images[12]?.url,
   },
   {
-    title: images[8]?.title,
-    image: images[8]?.url,
+    title: images[19]?.title,
+    image: images[19]?.url,
   },
   {
-    title: images[1]?.title,
-    image: images[1]?.url,
+    title: images[10]?.title,
+    image: images[10]?.url,
   },
 ];
 function ProductsHome() {

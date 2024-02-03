@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import productImages from "../../images.json";
+import React, { useEffect, useState } from "react";
+import ProductImages from "../../images.json";
 import ProductCards from "@/components/productCards/ProductCards";
 import CModal from "@/components/modal/CModal";
 import Image from "next/image";
@@ -13,9 +13,17 @@ import AOSComponent from "@/components/aos/AOS";
 
 function Products() {
   const [openModal, setOpenModal] = useState(false);
+  const [productImages, setProductImages] = useState([]);
   const toggleModal = (verdict) => {
     setOpenModal(verdict);
   };
+  useEffect(() => {
+    let prdImages = ProductImages?.reverse();
+    let asd = [...prdImages];
+    debugger;
+    setProductImages(asd);
+  }, [ProductImages]);
+
   return (
     <div>
       <div className="relative bg-cover bg-center h-40rem">

@@ -13,9 +13,12 @@ function ProductCards(props) {
       <div className="flex flex-col p-4">
         <div className="cardProps ">
           <div className="aasd h-96 flex justify-center">
-            <CldImage
+            <Image
               src={props?.productIcon}
-              className="object-none !max-w-none md:max-w-lg"
+              //When using CldImage
+              //className="object-none !max-w-none md:max-w-lg"
+              // When using Next-Image component
+              className="m-5 !max-w-none md:max-w-lg"
               width="400"
               height="600"
               alt="logo"
@@ -32,12 +35,15 @@ function ProductCards(props) {
     return (
       <div className="flex flex-col items-center -z-30">
         <div className="cardProps flex">
-          <div className="aasd h-96  flex justify-center">
-            <CldImage
+          <div className="aasd h-96 flex justify-center">
+            <Image
               src={props?.content?.url}
               width="400"
-              height="600"
-              className="object-none !max-w-none md:max-w-lg"
+              height="100"
+              //When using CldImage
+              // className="object-none !max-w-none md:max-w-lg"
+              // When using Next-Image component
+              className=" m-5 !max-w-none md:max-w-lg"
               alt="logo"
             />
           </div>
