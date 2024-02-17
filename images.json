@@ -48,73 +48,98 @@
         "description":"Pesiplex Syrup, B Complex"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706980657/Prednisone_tg2oni.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180717/Prednisone_cdwryo.svg",
         "title":"Predmosone",
         "description":"Predmosone 20mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706981022/Remaleves_For_Party_fapuos.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180758/Remaleves_For_Party_xsfinj.svg",
         "title":"Remalves",
         "description":"Sevelamer Carbonate 800MG Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706981143/Natras_-_80-01_tekpxj.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180476/Natras-80mg_xeemkx.svg",
         "title":"Natras-80",
         "description":"Telmisartan 80mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706983817/ASETYL-200_zriyv9.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180276/NATRAS-DUO_k60byb.svg",
+        "title":"Natras-DUO",
+        "description":"Telmisartan Amlodipine (As Besilate) 40m | 5mg Tablet"
+    },
+    {
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179113/ASETYL-200_pluc9m.svg",
         "title":"Acetylcysteine",
         "description":"ASETYL-200 200mg Granules for Oral Solution"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706984018/Methylergometrine_lkoghp.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180533/Methyrine_jzrkuv.svg",
         "title":"Methyrine",
         "description":"Methylergometrine 12MCG Tablet"
     },    
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706984415/Topradon_kvdz0z.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180966/Topradon_vwmrqd.svg",
         "title":"Topradon",
         "description":"Pantoprazole + Domperidone 40mg|30mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706984647/Rosvalife22_vxdcsv.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180874/Rosvalife2_dbbv7u.svg",
         "title":"Rosvalife-40MG",
         "description":"Rosuvastatin 40MG Tablet Film Coated"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706984928/Rosvalife_10gm-01_yf2z1u.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180811/Rosvalife_10gm_rvfxjs.svg",
         "title":"Rosvalife-10MG",
         "description":"Rosuvastatin 10MG Film Coated Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706984652/Vertilife_24mg_dp1rfx.svg",
-        "title":"Vertilife",
-        "description":"Betahistine 24mg Tablet"
-    },
-    {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706984252/Vertilife-01_wdnvjj.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179736/Vertilife_8mg_xqlggw.svg",
         "title":"Vertilife",
         "description":"Betahistine 8mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706985274/Febuxos_40-01_ikuttg.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179694/Vertilife_24mg_itvdry.svg",
+        "title":"Vertilife",
+        "description":"Betahistine 24mg Tablet"
+    },
+    {
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179742/Vertilife_16mg_nar0go.svg",
+        "title":"Vertilife",
+        "description":"Betahistine 16mg Tablet"
+    },
+    {
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179301/Febuxos_40_chy7ni.svg",
         "title":"Febuxosta",
         "description":"Febuxos-40 |Febuxos-40mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706985419/Nivozel-01_zuvtfd.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180420/Nivozel_akvjth.svg",
         "title":"Nivozel",
         "description":"Levocetirizine Nivozel Syrup"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706985851/Porate_2_fn6vti.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180663/Porate_xqvult.svg",
         "title":"Porate",
         "description":"Potassium Cirate 1.080mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1706985933/Clarilife-01_dtvjic.svg",
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179244/Clarilife_h6lfgi.svg",
         "title":"Clarilife",
         "description":"Clarithoromycin 500MG Film Coated Tablet"
-    }          
+    },
+    {
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708178892/Amloife_dwjoyj.svg",
+        "title":"Amolife",
+        "description":"Amlodipine 5mg Tablet"
+    },
+    {
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708178892/Amloife_dwjoyj.svg",
+        "title":"Levatam",
+        "description":"Levetiracetam 500mg Film Coated Tablet"
+    },
+    {
+        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180575/PIOGLIFE-30_m6axsz.svg",
+        "title":"Pioglife",
+        "description":"Pioglitazone 30mg Tablet"
+    }                
 ]
