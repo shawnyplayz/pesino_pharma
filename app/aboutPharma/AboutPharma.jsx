@@ -88,10 +88,10 @@ function AboutPharma() {
             <div className="title text-2xl font-normal tracking-widest ">
               {Essentials.aboutPharma}
             </div>
-            <div className="salutation font-normal leading-normal text-5xl w-72">
+            <div className="salutation font-normal leading-normal text-5xl">
               <p> {Essentials.aboutTitle}</p>
             </div>
-            <div className="desc w-80 text-2xl font-normal not-italic leading-normal">
+            <div className="desc text-2xl font-normal not-italic leading-normal">
               <p> {Essentials.aboutDesc}</p>
             </div>
           </div>
