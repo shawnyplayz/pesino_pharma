@@ -6,18 +6,6 @@
         "description":"Each Uncoated tablet contains:lorem ipsum"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1703013934/Products/Pesivit_eynjdb.svg",
-        "title":"Pesivit",
-        "description":"A combination of Vitamin A,D,B complex & Ascorbic acid"
-    },
-    {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1703014960/Products/12Vitamins_ywr49a.svg",
-        "title":"12 Vitamins",
-        "description":"12 Vitamins",
-        "width":"900",
-        "height":"900"
-    },
-    {
         "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1703014796/Products/Dentemol_d2ne5q.svg",
         "title":"Dentemol",
         "description":"Each Uncoated tablet contains..."
@@ -28,117 +16,97 @@
         "description":"Each Uncoated tablet contains"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1703014838/Products/Diclomol_s8ovtu.svg",
-        "title":"Diclomol",
-        "description":"Each Uncoated tablet contains"
-    },
-    {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1703014143/Products/99Vitamin_Syrup_dz4mxe.svg",
-        "title":"99 Vitamin",
-        "description":"Each Uncoated tablet contains"
-    },
-    {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1703014854/Products/Dinextar_hdzkvr.svg",
-        "title":"Dinextar",
-        "description":"Each Uncoated tablet contains"
-    },
-    {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1703013012/Products/Pesiplex_za3u94.svg",
-        "title":"Pesiplex",
-        "description":"Pesiplex Syrup, B Complex"
-    },
-    {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180717/Prednisone_cdwryo.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827940/pesino_products/Prednisone_vgzvg7.svg",
         "title":"Predmosone",
         "description":"Predmosone 20mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180758/Remaleves_For_Party_xsfinj.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827942/pesino_products/Remaleves_For_Party_pcxswu.svg",
         "title":"Remalves",
         "description":"Sevelamer Carbonate 800MG Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180476/Natras-80mg_xeemkx.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827922/pesino_products/Natras-80mg_ygvniy.svg",
         "title":"Natras-80",
         "description":"Telmisartan 80mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180276/NATRAS-DUO_k60byb.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827929/pesino_products/NATRAS-DUO_lpfukn.svg",
         "title":"Natras-DUO",
         "description":"Telmisartan Amlodipine (As Besilate) 40m | 5mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179113/ASETYL-200_pluc9m.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827767/pesino_products/ASETYL-200_jrjpth.svg",
         "title":"Acetylcysteine",
         "description":"ASETYL-200 200mg Granules for Oral Solution"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180533/Methyrine_jzrkuv.png",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827107/pesino_products/Methyrine_jzrkuv2_wmowxg.png",
         "title":"Methyrine",
         "description":"Methylergometrine 12MCG Tablet"
     },    
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180966/Topradon_vwmrqd.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827951/pesino_products/Topradon_gtp8ec.svg",
         "title":"Topradon",
         "description":"Pantoprazole + Domperidone 40mg|30mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180874/Rosvalife2_dbbv7u.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827948/pesino_products/Rosvalife2_bcxq0m.svg",
         "title":"Rosvalife-40MG",
         "description":"Rosuvastatin 40MG Tablet Film Coated"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180811/Rosvalife_10gm_rvfxjs.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827945/pesino_products/Rosvalife_10gm_yo3ewk.svg",
         "title":"Rosvalife-10MG",
         "description":"Rosuvastatin 10MG Film Coated Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179736/Vertilife_8mg_xqlggw.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827959/pesino_products/Vertilife_8mg_rujjod.svg",
         "title":"Vertilife",
         "description":"Betahistine 8mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179694/Vertilife_24mg_itvdry.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827954/pesino_products/Vertilife_24mg_tmask3.svg",
         "title":"Vertilife",
         "description":"Betahistine 24mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179742/Vertilife_16mg_nar0go.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827956/pesino_products/Vertilife_16mg_z6visz.svg",
         "title":"Vertilife",
         "description":"Betahistine 16mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179301/Febuxos_40_chy7ni.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827788/pesino_products/Febuxos_40_vun5ms.svg",
         "title":"Febuxosta",
         "description":"Febuxos-40 |Febuxos-40mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180420/Nivozel_akvjth.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827933/pesino_products/Nivozel_wyyyez.svg",
         "title":"Nivozel",
         "description":"Levocetirizine Nivozel Syrup"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180663/Porate_xqvult.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827935/pesino_products/Porate_grzxxs.svg",
         "title":"Porate",
         "description":"Potassium Cirate 1.080mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179244/Clarilife_h6lfgi.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827770/pesino_products/Clarilife_lk7o9u.svg",
         "title":"Clarilife",
         "description":"Clarithoromycin 500MG Film Coated Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708178892/Amloife_dwjoyj.png",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827107/pesino_products/Amloife_dwjoyj2_scbf2q.png",
         "title":"Amolife",
         "description":"Amlodipine 5mg Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708179387/Levetam_iecjzg.svg",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827790/pesino_products/Levetam_kkcaby.svg",
         "title":"Levatam",
         "description":"Levetiracetam 500mg Film Coated Tablet"
     },
     {
-        "url":"https://res.cloudinary.com/dpauqvsd6/image/upload/v1708180575/PIOGLIFE-30_m6axsz.png",
+        "url":"https://res.cloudinary.com/dip2pjbju/image/upload/v1716827106/pesino_products/PIOGLIFE-30_m6axsz2_luzdqv.png",
         "title":"Pioglife",
         "description":"Pioglitazone 30mg Tablet"
     }                
