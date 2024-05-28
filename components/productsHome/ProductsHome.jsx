@@ -9,8 +9,8 @@ const ProductHomePage = [
     image: images[12]?.url,
   },
   {
-    title: images[19]?.title,
-    image: images[19]?.url,
+    title: images[5]?.title,
+    image: images[5]?.url,
   },
   {
     title: images[10]?.title,

@@ -62,7 +62,7 @@ function Contact() {
                         <h1 className="text-2xl my-2 font-semibold">
                           Phone Number
                         </h1>
-                        <h1 className="text-xl font-normal">+91 9930992024</h1>
+                        <h1 className="text-xl font-normal">+91 9223445336</h1>
                       </div>
 
                       <div className="p-4">
