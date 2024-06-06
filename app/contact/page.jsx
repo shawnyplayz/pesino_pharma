@@ -3,8 +3,8 @@ import Head from "next/head";
 import React from "react";
 import defaultMetadata from "@/metadata";
 export const metadata = {
-  ...defaultMetadata,
-  title: "Contact Us",
+  keywords: [...defaultMetadata, "Contact US"],
+  title: "Contact Us|Pesino Pharma",
   description:
     "Contact us for inquiries, collaborations, and more. Your Company Name is here to assist you.",
 };

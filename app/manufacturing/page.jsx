@@ -13,8 +13,13 @@ import misc from "../../misc.json";
 import defaultMetadata from "@/metadata";
 import Head from "next/head";
 export const metadata = {
-  ...defaultMetadata,
-  title: "Manufacturing",
+  keywords: [
+    ...defaultMetadata,
+    "Maufacturing",
+    "Have a look at our Factories",
+    "Factory Gallery",
+  ],
+  title: "Manufacturing|Pesino Pharma",
   description:
     "Explore the advanced manufacturing processes at Your Company Name. Learn about our state-of-the-art facilities, quality controls, and commitment to pharmaceutical excellence.",
 };

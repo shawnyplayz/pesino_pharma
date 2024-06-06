@@ -10,7 +10,37 @@ import cap3 from "../../public/products/Capsule_rb.svg";
 import Essentials from "../../essentials.json";
 import "./capsule.css";
 import AOSComponent from "@/components/aos/AOS";
-
+export const metadata = {
+  title: "Products|Pesino Pharma",
+  description:
+    "Elevate Your Well-being with Pesino Pharma's Premium Pharmaceutical Products - Discover Quality, Efficacy, and Innovation in Every Dose!",
+  keywords: [
+    "Products",
+    "View all products by Pesino Pharma",
+    "Telmisartan",
+    "Remaleves",
+    "Predmosone",
+    "Natras-DUO",
+    "Acetylcysteine",
+    "Methyrine",
+    "Topradon",
+    "Rosvalife",
+    "Vertilife",
+    "Febuxosta",
+    "Nivozel",
+    "Porate",
+    "Clarilife",
+    "Amolife",
+    "Levatam",
+    "Pioglife",
+  ],
+  authors: [{ name: "Shawn Almeida" }],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+};
 function Products() {
   const [openModal, setOpenModal] = useState(false);
   const [productImages, setProductImages] = useState([]);
@@ -20,7 +50,7 @@ function Products() {
   useEffect(() => {
     let prdImages = ProductImages?.reverse();
     let asd = [...prdImages];
-    debugger;
+
     setProductImages(asd);
   }, [ProductImages]);
 

@@ -18,7 +18,6 @@ function Footer() {
       },
       body: JSON.stringify(email),
     }).then((el) => {
-      debugger;
       if (el?.status > 200 || el?.status < 400) {
         alert("Subscribed successfully!");
         setEmail(null);
