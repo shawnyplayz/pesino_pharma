@@ -25,8 +25,8 @@ function ProductsHome() {
           {Essentials.pTitle}
         </h1>
       </div>
-      <div className="flex flex-col my-8">
-        <div className="flex flex-col md:flex-row justify-evenly">
+      <div className="flex flex-col my-8 ">
+        <div className="flex flex-col lg:flex-row justify-evenly">
           {ProductHomePage?.map((el) => {
             return (
               <ProductCards productIcon={el.image} productTitle={el?.title} />
