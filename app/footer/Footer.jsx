@@ -28,7 +28,7 @@ function Footer() {
     });
   };
   return (
-    <div className="flex pl-4 py-8 md:px-28 md:py-8 w-full mt-20">
+    <div className="flex pl-4 py-8 md:px-28 md:py-8 w-full mt-20 container mx-auto">
       <div class="grid w-full grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-16 ">
         <div classname="p-4">
           <div className="flex flex-row mt-8">

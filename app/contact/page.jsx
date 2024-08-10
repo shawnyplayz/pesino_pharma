@@ -3,7 +3,7 @@ import Head from "next/head";
 import React from "react";
 import defaultMetadata from "@/metadata";
 export const metadata = {
-  keywords: [...defaultMetadata, "Contact US"],
+  keywords: ["Contact US"],
   title: "Contact Us|Pesino Pharma",
   description:
     "Contact us for inquiries, collaborations, and more. Your Company Name is here to assist you.",
@@ -12,7 +12,7 @@ function Contact() {
   return (
     <div>
       <div
-        className="relative bg-cover bg-center flex "
+        className="relative bg-cover bg-center flex"
         style={{ height: "auto" }}
       >
         {/* <!-- Background Image --> */}

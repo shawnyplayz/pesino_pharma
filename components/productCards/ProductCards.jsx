@@ -18,7 +18,7 @@ function ProductCards(props) {
               //When using CldImage
               //className="object-none !max-w-none md:max-w-lg"
               // When using Next-Image component
-              className="m-5 !max-w-none md:max-w-lg"
+              className="md:m-5 !max-w-sm md:max-w-lg"
               width="400"
               height="600"
               alt="logo"

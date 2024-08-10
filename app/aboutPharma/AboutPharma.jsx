@@ -20,7 +20,7 @@ const Benefits = [
   {
     icon: <GiMedicines />,
     title: "QUALITY",
-    desc: "Pesino Pharma's Quality Operations team upholds rigorous standards to deliver consistently high-quality, pure, and effective drugs to consumers. Our in-house cGMP Quality Circles enforce adherence to cGMP norms across manufacturing units. Key controls include validated machinery and processes, stringent environmental and microbiological oversight, personnel training, and meticulous record-keeping. These measures ensure that quality is integral to the final product.",
+    desc: "Pesino Pharma's Quality Operations team upholds rigorous standards to deliver consistently high-quality, pure, and effective drugs to consumers. Our in-house cGMP Quality Circles enforce adherence to cGMP norms across manufacturing units.",
   },
   {
     icon: <GiFactory />,
@@ -45,94 +45,96 @@ const Benefits = [
 ];
 function AboutPharma() {
   return (
-    <div className="bg-home-start w-full h-auto">
-      <div className="flex flex-col p-4 md:flex-row gap-44 justify-center mt-8">
-        {/* left side P */}
-        <AOSComponent>
-          <div
-            className="flex flex-row gap-5 mt-14 md:w-1/2 justify-center"
-            data-aos="fade-right"
-          >
-            <div className="p-stand">
-              <Image
-                src={misc[0]?.url}
-                className="P-rect"
-                alt="about us"
-                loading="lazy"
-                width={1000}
-                height={1000}
-              />
-            </div>
-            <div className="flex flex-col gap-5">
-              <div className="p-cur">
+    <div className="bg-home-start">
+      <div className="container mx-auto">
+        <div className="flex flex-col p-4 md:flex-row gap-44 justify-center mt-8">
+          {/* left side P */}
+          <AOSComponent>
+            <div
+              className="flex flex-row gap-5 mt-14 md:w-1/2 justify-center"
+              data-aos="fade-right"
+            >
+              <div className="p-stand">
                 <Image
-                  src={misc[1]?.url}
-                  className="p-curve"
-                  alt="logo"
+                  src={misc[0]?.url}
+                  className="P-rect"
+                  alt="about us"
                   loading="lazy"
                   width={1000}
                   height={1000}
                 />
               </div>
-              <div className="flex flex-col md:flex-row w-full gap-5">
-                <Image src={Pcircle} className="" alt="logo" loading="lazy" />
-                <Image src={Pleaf} className="" alt="logo" loading="lazy" />
+              <div className="flex flex-col gap-5">
+                <div className="p-cur">
+                  <Image
+                    src={misc[1]?.url}
+                    className="p-curve"
+                    alt="logo"
+                    loading="lazy"
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+                <div className="flex flex-col md:flex-row w-full gap-5">
+                  <Image src={Pcircle} className="" alt="logo" loading="lazy" />
+                  <Image src={Pleaf} className="" alt="logo" loading="lazy" />
+                </div>
               </div>
             </div>
-          </div>
-          {/* right side content */}
-          <div
-            className="flex flex-col gap-5 my-24 md:w-1/2 items-start "
-            data-aos="zoom-in"
-          >
-            <div className="title text-2xl font-normal tracking-widest ">
-              {Essentials.aboutPharma}
+            {/* right side content */}
+            <div
+              className="flex flex-col gap-5 my-24 md:w-1/2 items-start "
+              data-aos="zoom-in"
+            >
+              <div className="title text-2xl font-normal tracking-widest ">
+                {Essentials.aboutPharma}
+              </div>
+              <div className="salutation font-normal leading-normal text-5xl">
+                <p> {Essentials.aboutTitle}</p>
+              </div>
+              <div className="desc text-2xl font-normal not-italic leading-normal">
+                <p> {Essentials.aboutDesc}</p>
+              </div>
             </div>
-            <div className="salutation font-normal leading-normal text-5xl">
-              <p> {Essentials.aboutTitle}</p>
-            </div>
-            <div className="desc text-2xl font-normal not-italic leading-normal">
-              <p> {Essentials.aboutDesc}</p>
+          </AOSComponent>
+        </div>
+        <AOSComponent>
+          <div className="Benefits md:px-10">
+            <div className="flex flex-col px-4" data-aos="zoom-in-up">
+              <div className="title text-2xl font-normal tracking-widest my-2">
+                {Essentials.aboutPharma}
+              </div>
+              <div className="salutation font-normal leading-normal text-5xl my-2">
+                <p> {Essentials.benefitsPharma}</p>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-4">
+                {Benefits.map((el) => (
+                  <div class="p-4">
+                    <div className="">
+                      <div className=" flex justify-start items-center bg-react-leaf bg-no-repeat bg-10% h-36 w-auto">
+                        <div className="flex justify-start text-white  text-4xl ml-16 w-full">
+                          {el.icon}
+                        </div>
+                        {/* <Image src={Pleaf} className="" alt="logo" loading="lazy" /> */}
+                        {/* <div className="absolute -mt-14 ml-20 text-white text-3xl">
+                      {el?.icon}
+                    </div> */}
+                      </div>
+
+                      <div className="title  my-8 text-3xl font-normal">
+                        {el?.title}
+                      </div>
+                      <div className="text-xl max-w-96 max-h-52 overflow-scroll font-normal">
+                        {el?.desc}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </AOSComponent>
       </div>
-      <AOSComponent>
-        <div className="Benefits md:px-10">
-          <div className="flex flex-col px-4" data-aos="zoom-in-up">
-            <div className="title text-2xl font-normal tracking-widest my-2">
-              {Essentials.aboutPharma}
-            </div>
-            <div className="salutation font-normal leading-normal text-5xl my-2">
-              <p> {Essentials.benefitsPharma}</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-4">
-              {Benefits.map((el) => (
-                <div class="p-4">
-                  <div className="">
-                    <div className=" flex justify-start items-center bg-react-leaf bg-no-repeat bg-10% h-36 w-auto">
-                      <div className="flex justify-start text-white  text-4xl ml-16 w-full">
-                        {el.icon}
-                      </div>
-                      {/* <Image src={Pleaf} className="" alt="logo" loading="lazy" /> */}
-                      {/* <div className="absolute -mt-14 ml-20 text-white text-3xl">
-                      {el?.icon}
-                    </div> */}
-                    </div>
-
-                    <div className="title  my-8 text-3xl font-normal">
-                      {el?.title}
-                    </div>
-                    <div className="text-xl max-w-96 max-h-52 overflow-scroll font-normal">
-                      {el?.desc}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </AOSComponent>
     </div>
   );
 }

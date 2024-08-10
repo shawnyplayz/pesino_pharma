@@ -27,7 +27,7 @@ function BetterIngredients() {
     },
   ];
   return (
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 my-8 px-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 my-8 px-20 container mx-auto">
       <div className="p-4">
         <div className="flex flex-col ">
           <div className="title text-2xl font-normal tracking-widest ">

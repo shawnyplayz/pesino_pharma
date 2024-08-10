@@ -64,7 +64,7 @@ function AboutUs() {
         {/* <!-- Gradient Overlay --> */}
         <div class="absolute inset-0 bg-gradient-to-t from-transparent to-black"></div>
         {/* <!-- Your content goes here --> */}
-        <div class="relative flex-col z-10 flex items-center justify-center h-full text-white px-4 gap-8">
+        <div class="relative flex-col z-10 flex items-center justify-center h-full text-white  gap-8 container mx-auto">
           <AOSComponent>
             <div className="flex flex-col w-full h-full justify-center items-center gap-8 my-8 md:my-0">
               <div
@@ -74,7 +74,7 @@ function AboutUs() {
                 About Us
               </div>
               <div
-                className="w-full md:w-2/3 flex justify-center font-light text-3xl text-white"
+                className="w-full flex justify-center font-light text-3xl text-white"
                 data-aos="fade-left"
               >
                 <p>{Essentials.aboutusBanner}</p>
@@ -156,63 +156,66 @@ function AboutUs() {
         </div>
       </div>
       <div className="midPart my-16 p-8 md:p-24">
-        <div className="flex flex-col md:flex-row gap-16 justify-center">
-          <AOSComponent>
-            <div className="md:w-1/2" data-aos="fade-right">
-              <Image
-                src={misc[2]?.url}
-                className="rounded-3xl object-fill"
-                loading="lazy"
-                alt="AboutPesino"
-                width={1000}
-                height={1000}
-              />
-            </div>
-            <div className="WhoweAre md:w-1/2" data-aos="flip-right ">
-              <div className="aboutus_titles my-4">
-                {Essentials.aboutusTitle}
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row gap-16 justify-center">
+            <AOSComponent>
+              <div className="md:w-1/2" data-aos="fade-right">
+                <Image
+                  src={misc[2]?.url}
+                  className="rounded-3xl object-fill"
+                  loading="lazy"
+                  alt="AboutPesino"
+                  width={1000}
+                  height={1000}
+                />
               </div>
-              <div className="aboutus_desc max-w-xl overflow-y-scroll my-4">
-                {Essentials.aboutusDesc}
+              <div className="WhoweAre md:w-1/2" data-aos="flip-right ">
+                <div className="aboutus_titles my-4">
+                  {Essentials.aboutusTitle}
+                </div>
+                <div className="aboutus_desc overflow-y-scroll my-4">
+                  {Essentials.aboutusDesc}
+                </div>
               </div>
-            </div>
-          </AOSComponent>
+            </AOSComponent>
+          </div>
         </div>
       </div>
       <div className="bg-home-start">
-        <div className="flex flex-col">
-          <div className="mt-16 text-7xl text-center themeColor flex flex-col items-center">
-            <AOSComponent>
-              <h1 className="" data-aos="fade-down">
-                Why Choose Us
-              </h1>
-            </AOSComponent>
-          </div>
-          <div className="flex flex-wrap justify-center">
-            {whychooseUs?.map((item, index) => (
-              <div
-                key={index}
-                className={`flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 ${
-                  index < 3 ? "mb-4" : "mb-0" // Add margin-bottom for items in the first row
-                }`}
-              >
-                <div className="flex justify-center flex-col items-center p-4">
-                  <div className="my-8">
-                    <Image src={item?.icon} alt="whychooseUs" />
-                  </div>
-                  <div className="aboutus_titles themeColor mb-8 ">
-                    {item?.title}
-                  </div>
-                  <div className="aboutus_desc text-center max-w-7xl overflow-scroll">
-                    {item?.description}
+        <div className="container mx-auto">
+          <div className="flex flex-col">
+            <div className="mt-16 text-7xl text-center themeColor flex flex-col items-center">
+              <AOSComponent>
+                <h1 className="" data-aos="fade-down">
+                  Why Choose Us
+                </h1>
+              </AOSComponent>
+            </div>
+            <div className="flex flex-wrap justify-center">
+              {whychooseUs?.map((item, index) => (
+                <div
+                  key={index}
+                  className={`flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 ${
+                    index < 3 ? "mb-4" : "mb-0" // Add margin-bottom for items in the first row
+                  }`}
+                >
+                  <div className="flex justify-center flex-col items-center p-4">
+                    <div className="my-8">
+                      <Image src={item?.icon} alt="whychooseUs" />
+                    </div>
+                    <div className="aboutus_titles themeColor mb-8 ">
+                      {item?.title}
+                    </div>
+                    <div className="aboutus_desc text-center max-w-7xl overflow-scroll">
+                      {item?.description}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-      {/* Main Part */}
     </div>
   );
 }

@@ -14,7 +14,7 @@ import defaultMetadata from "@/metadata";
 import Head from "next/head";
 export const metadata = {
   keywords: [
-    ...defaultMetadata,
+    // ...defaultMetadata,
     "Maufacturing",
     "Have a look at our Factories",
     "Factory Gallery",
@@ -114,7 +114,7 @@ function Manufacturing() {
         </div>
       </div>
       {/* three perks */}
-      <div className="flex gap-14 md:gap-0 md:flex-row md:justify-evenly my-24 flex-col items-center ">
+      <div className="flex gap-14 md:gap-0 md:flex-row md:justify-evenly my-24 flex-col items-center container mx-auto ">
         {perks?.map((el) => (
           <div className="flex flex-col ">
             <div className="mb-6 flex justify-center">
@@ -130,7 +130,7 @@ function Manufacturing() {
         ))}
       </div>
       {/* four pics */}
-      <div className="">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 p-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
           {imagur.map((item, index) => (
             <AOSComponent>
@@ -150,7 +150,7 @@ function Manufacturing() {
         </div>
       </div>
       {/* four perks above footer */}
-      <div className=" md:my-28">
+      <div className=" md:my-28 container mx-auto">
         <div className="p-4">
           <div className="flex md:flex-row md:justify-evenly gap-16 flex-col">
             {footer_perks?.map((el) => (

@@ -19,27 +19,29 @@ const ProductHomePage = [
 ];
 function ProductsHome() {
   return (
-    <div>
-      <div className="title my-4">
-        <h1 className="text-black text-center font-normal leading-normal text-4xl tracking-widest my-8">
-          {Essentials.pTitle}
-        </h1>
-      </div>
-      <div className="flex flex-col my-8 ">
-        <div className="flex flex-col lg:flex-row justify-evenly">
-          {ProductHomePage?.map((el) => {
-            return (
-              <ProductCards productIcon={el.image} productTitle={el?.title} />
-            );
-          })}
+    <div className="container max-w-full">
+      <div className="flex justify-center flex-col items-center">
+        <div className="title my-4">
+          <h1 className="text-black text-center font-normal leading-normal text-4xl tracking-widest my-8">
+            {Essentials.pTitle}
+          </h1>
         </div>
-        <div className="my-16 w-full flex justify-center">
-          <Link
-            href="/products"
-            className="themeColor text-2xl font-medium  h-1 decoration-solid  underline underline-offset-4"
-          >
-            <span>VIEW ALL</span>
-          </Link>
+        <div className="flex flex-col my-8 ">
+          <div className="flex flex-col lg:flex-row justify-evenly">
+            {ProductHomePage?.map((el) => {
+              return (
+                <ProductCards productIcon={el.image} productTitle={el?.title} />
+              );
+            })}
+          </div>
+          <div className="my-16 w-full flex justify-center">
+            <Link
+              href="/products"
+              className="themeColor text-2xl font-medium  h-1 decoration-solid  underline underline-offset-4"
+            >
+              <span>VIEW ALL</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
