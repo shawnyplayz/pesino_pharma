@@ -99,7 +99,7 @@ function AboutPharma() {
           </AOSComponent>
         </div>
         <AOSComponent>
-          <div className="Benefits md:px-10">
+          <div className="Benefits ">
             <div className="flex flex-col px-4" data-aos="zoom-in-up">
               <div className="title text-2xl font-normal tracking-widest my-2">
                 {Essentials.aboutPharma}

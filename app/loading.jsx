@@ -10,7 +10,14 @@ export default function Loading() {
       style={{ background: "rgba(169, 169, 169, 0.8)" }}
     >
       <div className="bg-white rounded-2xl flex flex-col gap-2 p-5 justify-center items-center">
-        <Image src={innocursor} alt="loader" loading="eager" priority />
+        <Image
+          src={innocursor}
+          alt="loader"
+          loading="eager"
+          priority
+          width={100}
+          height={100}
+        />
         <div className="font-medium text-2xl">Powered by Innovative Cursor</div>
       </div>
     </div>
